@@ -1,5 +1,5 @@
 ---
-title: mod:relcl
+title: mod@appos
 request: pattern { M -[mod@appos]-> N }
 scope:
   schema: SUD

@@ -19,9 +19,9 @@ The deep features are:
 - [@name](./name.md)
 - [@pass](./pass.md)
 - [@relcl](./relcl.md)
-- [@scrap](./scrap.md)
 - [@tense](./tense.md)
 
-Obsolete deep features:
-- [@ fixed](./fixed.md)
-- [@ x](./x.md)
+Deprecated deep features:
+- [@fixed](guidelines/universal/deprel/deep_features/deprecated/fixed)
+- [@scrap](guidelines/universal/deprel/deep_features/deprecated/scrap)
+- [@x](guidelines/universal/deprel/deep_features/deprecated/x)

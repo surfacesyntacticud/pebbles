@@ -14,7 +14,7 @@ tags:
 
 The `@fixed` feature was previously used for multi-word expression.
 
-It has been replaced by nodes features: see [here](../Universal_construction/Idioms_Titles.md)@@@
+It has been replaced by nodes features: see page [Idioms and Titles](guidelines/universal/construction/idioms_titles).
 
 
 

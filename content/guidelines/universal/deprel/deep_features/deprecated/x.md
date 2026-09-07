@@ -13,9 +13,8 @@ tags:
 
 ## Universal
 
-{{<hint danger>}}
-NOT USED ANYMORE. REPLACE BY FEATURES [`Subject`](../features/Subject.md)@@@
-{{</hint>}}
+> [!danger]
+> NOT USED ANYMORE. REPLACE BY FEATURES [`Subject`](../features/Subject.md)@@@
 
 The `@x` deep feature was used to annotate relationships with verbs that do not have an explicitly marked subject, but whose semantic subject can nevertheless be found in the sentence.
 This relationship therefore applies essentially to infinitive verbs which relate to a subject introduced earlier in the sentence.
