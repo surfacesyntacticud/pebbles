@@ -65,7 +65,8 @@ The [`conj:dicto`](guidelines/deprel/conj:dicto) relation applies also when the 
 
 ## Unfinished constructions
 
-Sometimes speakers utter a half-finished construction. In this case, a word cannot be attached to its head, because the speaker decided not to say it.
+Sometimes speakers utter a half-finished construction.
+In this case, a word cannot be attached to its head, because the speaker decided not to say it.
 
 <conll>
 # lang = French
@@ -77,13 +78,14 @@ Sometimes speakers utter a half-finished construction. In this case, a word cann
 4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	conj:dicto	_	Gloss=the
 5	portrait	portrait	NOUN	_	Gender=Masc|Number=Sing	2	comp:obj	_	Gloss=portrayal
 6	de	de	ADP	_	_	5	udep	_	Gloss=of
-7	notre	son	DET	_	Number=Sing|Person=3|PossNumber=Plur|PossPerson=1|PronType=Prs	6	comp:obj@scrap	_	Gloss=our
+7	notre	son	DET	_	Number=Sing|Person=3|PossNumber=Plur|PossPerson=1|PronType=Prs	6	comp:obj	_	Gloss=our|Scrap=Yes|highlight=red
 8	de	de	ADP	_	_	6	conj:dicto	_	Gloss=of
 9	votre	son	DET	_	Number=Sing|Person=3|PossNumber=Plur|PossPerson=2|PronType=Prs	10	det	_	Gloss=your
 10	héros	héros	NOUN	_	Gender=Masc	8	comp:obj	_	Gloss=hero
 </conll>
 
-In this example, the construction *Je lis son le portrait de notre de votre héros* (English: *I'im reading his the portrayal of our of your hero*). This construction causes some issues because we cannot attach the word *notre* to its semantic head *héros* because of the presence of the second *de*.
+In this example, the construction *Je lis son le portrait de notre de votre héros* (English: *I'im reading his the portrayal of our of your hero*).
+This construction causes some issues because we cannot attach the word *notre* to its semantic head *héros* because of the presence of the second *de*.
 
 If the sentence was *portrait de notre votre héros* (English: *portrayal of our your hero*) we could use the [`conj:dicto`](guidelines/deprel/conj:dicto) relation to attach *votre* to *notre*.
 
@@ -98,9 +100,9 @@ If the sentence was *portrait de notre votre héros* (English: *portrayal of our
 5	héros	héros	NOUN	_	Gender=Masc	2	comp:obj	_	Gloss=hero
 </conll>
 
-In these cases, we prefer to attach the two words *de* with a [`conj:dicto`](guidelines/deprel/conj:dicto) relation and link the word *notre* to the first *de* as an incomplete object - [`comp:obj@scrap`](guidelines/deep_features/scrap).
+In these cases, we prefer to attach the two words *de* with a [`repair`](guidelines/deprel/repair) relation and link the word *notre* to the first *de* as an incomplete object - [`comp:obj`] and add a feature [`Scrap=Yes`](guidelines/universal/feature/Scrap) to the object `notre`.
 
-Below we can see an example when a speaker starts with one word, then decides it doesn't fit and searches for a more fitting word.
+Below we can see an example when a speaker starts with one unfinished word *m~*, then decides it doesn't fit and searches for a more fitting word *virus*.
 
 <conll>
 # lang = French
@@ -109,10 +111,10 @@ Below we can see an example when a speaker starts with one word, then decides it
 1	c'est-à-dire	c'est-à-dire	CCONJ	_	ExtPos=CCONJ	0	root	_	Gloss=that_means|Idiom=Yes
 2	que	que	SCONJ	_	_	1	comp:obj	_	Gloss=that|InIdiom=Yes
 3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	Gloss=the
-4	m~	m~	X	_	_	8	subj	_	_
+4	m~	m~	X	_	_	8	subj	_	highlight=red
 5	le	le	DET	conj:reform	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	Gloss=the
-6	le	le	DET	conj:reform	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	conj:dicto	_	Gloss=the
-7	virus	virus	NOUN	_	Gender=Masc	4	conj:dicto	_	Gloss=virus
+6	le	le	DET	conj:reform	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	repair	_	Gloss=the
+7	virus	virus	NOUN	_	Gender=Masc	4	repair	_	Gloss=virus|highlight=red
 8	sait	savoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	comp:obj	_	Gloss=knows
 9	faire	faire	VERB	_	VerbForm=Inf	8	comp:obj	_	Gloss=make|Subject=SubjRaising
 10	sa	son	DET	_	Gender=Fem|Number=Sing|Person=3|PossNumber=Sing|PossPerson=3|PronType=Prs	12	det	_	Gloss=its
@@ -122,5 +124,7 @@ Below we can see an example when a speaker starts with one word, then decides it
 14	lui-même	lui-même	PRON	_	_	13	comp:obj	_	Gloss=himself
 </conll>
 
-See also [`@scrap`](guidelines/deep_features/scrap). page.
+> [!warning]
+> In previous versions, the deep features [`@scrap`](guidelines/universal/deprel/deep_features/deprecated/scrap) was used for unfinished constructions.
+> This is now obsolete and should be used in SUD annotations.
 

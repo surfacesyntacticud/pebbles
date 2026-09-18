@@ -7,5 +7,4 @@ level: error
 type: valid
 ---
 
-
-The `EXTPOS` is obsolete, it must be replaced by [[TODO|ExtPos]]. 
+The `EXTPOS` feature is obsolete, it must be replaced by [[TODO|ExtPos]]. 

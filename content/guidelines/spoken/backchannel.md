@@ -15,7 +15,7 @@ Backchannels are short productions uttered by one participant while another spea
 
 To be recognized as backchannels, such utterances (i) must be addressed to the content of the other speaker’s contribution; (ii) must not be required or expected by the preceding turn (e.g. answers to wh- and polar questions are expected and required, so they cannot be considered backchannels); (iii) must not require a reaction from the main speaker.
 
-The backchannel feature is encoded as such: `Backchannel:⟨sent_id⟩::⟨tok_id⟩`, on the root of the sentence where the backchannel occurs. The `sent_id` is that of one of the previous sentences. Most often it is the previous sentence, but because of how speech is segmented, it can be the `sent_id` of a sentence further back. The `tok_id` is generally that of the previous sentence's root. In some edge cases, when the previous sentence is rather long and there are multiple utterances that can be annotated as backchannels, we differentiate the `tok_id` of each annotation, using the `tok_id` of the head of the last completed segment.
+The backchannel feature is encoded as such: `Backchannel=⟨sent_id⟩::⟨tok_id⟩`, on the root of the sentence where the backchannel occurs. The `sent_id` is that of one of the previous sentences. Most often it is the previous sentence, but because of how speech is segmented, it can be the `sent_id` of a sentence further back. The `tok_id` is generally that of the previous sentence's root. In some edge cases, when the previous sentence is rather long and there are multiple utterances that can be annotated as backchannels, we differentiate the `tok_id` of each annotation, using the `tok_id` of the head of the last completed segment.
 
 ## Base case
 
@@ -77,11 +77,11 @@ Here is a long sentence with two backchannels, each with a different `tok_id`.
 15	une	un	PRON	_	Gender=Fem|Number=Sing|PronType=Ind	14	comp:pred	_	AlignBegin=130412|AlignEnd=130508|Person[lex]=3
 16-17	des	_	_	_	_	_	_	_	SpaceAfter=No
 16	de	de	ADP	_	_	15	comp:obl	_	AlignBegin=130508|AlignEnd=131042
-17	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	16	comp:obj@scrap	_	AlignBegin=130508|AlignEnd=131042
+17	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	16	comp:obj	_	AlignBegin=130508|AlignEnd=131042|Scrap=Yes
 18	,	,	PUNCT	_	_	19	punct	_	AlignBegin=131042|AlignEnd=131210
 19-20	des	_	_	_	_	_	_	_	SpaceAfter=No
 19	de	de	ADP	_	_	16	conj:dicto	_	AlignBegin=131210|AlignEnd=132165
-20	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	19	comp:obj@scrap	_	AlignBegin=131210|AlignEnd=132165
+20	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	19	comp:obj	_	AlignBegin=131210|AlignEnd=132165|Scrap=Yes
 21	,	,	PUNCT	_	_	23	punct	_	AlignBegin=132165|AlignEnd=132944
 22	c'	ce	PRON	_	PronType=Dem	23	subj	_	AlignBegin=132944|AlignEnd=132999|Gender[lex]=Masc|Number[lex]=Sing|Person[lex]=3|SpaceAfter=No
 23	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	conj:dicto	_	AlignBegin=132999|AlignEnd=133159

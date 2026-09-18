@@ -75,7 +75,7 @@ A parenthetical clause could form an independent sentence.
 20	{	{	PUNCT	_	_	22	punct	_	AlignBegin=63770|AlignEnd=63770|Gloss=PUNCT
 21	my	my	PRON	_	Number=Sing|Person=1|Poss=Yes	22	mod:poss	_	AlignBegin=63770|AlignEnd=64119|Gloss=POSS.SG.1
 22	papa	papa	NOUN	_	_	29	subj	_	AlignBegin=64119|AlignEnd=64468|Gloss=papa
-23	just	just	ADV	_	_	22	mod@scrap	_	AlignBegin=64468|AlignEnd=64816|Gloss=just
+23	just	just	ADV	_	_	22	mod	_	AlignBegin=64468|AlignEnd=64816|Gloss=just|Scrap=Yes
 24	||	||	PUNCT	_	_	26	punct	_	AlignBegin=64816|AlignEnd=64816|Gloss=PUNCT
 25	my	my	PRON	_	Number=Sing|Person=1|Poss=Yes	26	mod:poss	_	AlignBegin=64816|AlignEnd=65165|Gloss=POSS.SG.1
 26	papa	papa	NOUN	_	_	22	conj:dicto	_	AlignBegin=65165|AlignEnd=65514|Gloss=papa

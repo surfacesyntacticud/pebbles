@@ -1,5 +1,5 @@
 ---
-title: fixed
+title: "@fixed"
 request: pattern { N -[deep=fixed]-> M }
 scope:
   schema: SUD

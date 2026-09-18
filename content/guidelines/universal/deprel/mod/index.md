@@ -1,9 +1,13 @@
 ---
 title: mod main rel
+request: pattern { X -[1=mod]-> Y }
+scope:
+  schema: SUD
 type: doc
 tags:
  - deprel
 ---
+
 
 In SUD, the `mod` relation is used for all modifiers (as opposed to UD set of label `amod`, `advmod`…).
 
