@@ -65,7 +65,7 @@ Complements of the verbs in a passive construction are marked `comp:obj@pass`
 6	exécution	exécution	NOUN	_	Gender=Fem|Number=Sing	10	subj@pass	_	Gloss=execution
 7	de	de	ADP	_	_	6	udep	_	Gloss=if
 8	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|Person=3|PronType=Art	9	det	_	Gloss=the
-9	sentence	sentence	NOUN	_	Gender=Fem|Number=Sing	7	comp:obj	_	Gloss=sentence
-10	soit	être	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	comp:obj	_	Gloss=be
+9	sentence	sentence	NOUN	_	Gender=Fem|Number=Sing	7	comp	_	Gloss=sentence
+10	soit	être	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	comp	_	Gloss=be
 11	différé	différer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	10	comp:aux@pass	_	Gloss=postponed
 </conll>

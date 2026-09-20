@@ -57,16 +57,16 @@ pattern { X -[comp:pred]-> Y; X [upos=VERB] }
 2	s	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	considered	consider	VERB	VBN	Tense=Past|VerbForm=Part	2	comp:aux@pass	_	_
 4	to	to	PART	TO	_	3	comp:pred	_	_
-5	be	be	AUX	VB	VerbForm=Inf	4	comp:obj	_	_
+5	be	be	AUX	VB	VerbForm=Inf	4	comp	_	_
 6	one	one	NUM	CD	NumType=Card	5	comp:pred	_	_
 7	of	of	ADP	IN	_	6	udep	_	_
 8	the	the	DET	DT	Definite=Def|PronType=Art	11	det	_	_
 9	most	most	ADV	RBS	_	10	mod	_	_
 10	beautiful	beautiful	ADJ	JJ	Degree=Pos	11	mod	_	_
-11	cities	city	NOUN	NNS	Number=Plur	7	comp:obj	_	_
+11	cities	city	NOUN	NNS	Number=Plur	7	comp	_	_
 12	in	in	ADP	IN	_	11	udep	_	_
 13	the	the	DET	DT	Definite=Def|PronType=Art	14	det	_	Entity=(place-12
-14	world	world	NOUN	NN	Number=Sing	12	comp:obj	_	Entity=place-1)place-11)place-12)|SpaceAfter=No
+14	world	world	NOUN	NN	Number=Sing	12	comp	_	Entity=place-1)place-11)place-12)|SpaceAfter=No
 15	.	.	PUNCT	.	_	2	punct	_	_
 </conll>
 
@@ -79,14 +79,14 @@ pattern { X -[comp:pred]-> Y; X [upos=VERB] }
 4	considéré	considérer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	3	comp:aux@pass	_	Gloss=considered
 5	comme	comme	ADP	_	_	4	comp:pred	_	Gloss=as
 6	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|Person=3|PronType=Art	7	det	_	Gloss=a
-7	bassin	bassin	NOUN	_	Gender=Masc|Number=Sing	5	comp:obj	_	Gloss=basin
+7	bassin	bassin	NOUN	_	Gender=Masc|Number=Sing	5	comp	_	Gloss=basin
 8	dynamique	dynamique	ADJ	_	Gender=Masc|Number=Sing	7	mod	_	Gloss=dynamic
 9	et	et	CCONJ	_	_	10	cc	_	Gloss=and
 10	riche	riche	ADJ	_	Gender=Masc|Number=Sing	8	conj	_	Gloss=rich
 11	en	en	ADP	_	_	10	mod	_	Gloss=in
-12	termes	terme	NOUN	_	Gender=Masc|Number=Plur	11	comp:obj	_	Gloss=terms
+12	termes	terme	NOUN	_	Gender=Masc|Number=Plur	11	comp	_	Gloss=terms
 13	d'	de	ADP	_	_	12	udep	_	Gloss=of
-14	industrie	industrie	NOUN	_	Gender=Fem|Number=Sing	13	comp:obj	_	Gloss=industry
+14	industrie	industrie	NOUN	_	Gender=Fem|Number=Sing	13	comp	_	Gloss=industry
 </conll>
 
 ### `comp:pred` for predication of the object
@@ -152,7 +152,7 @@ pattern { X -[comp:pred]-> Y; Y[upos=SCONJ] }
 5	that	that	SCONJ	IN	_	4	comp:pred	_	_
 6	we	we	PRON	PRP	Case=Nom|Number=Plur|Person=1|PronType=Prs	7	subj	_	_
 7-8	don't	_	_	_	_	_	_	_	_
-7	do	do	AUX	VBP	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	5	comp:obj	_	_
+7	do	do	AUX	VBP	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	5	comp	_	_
 8	't	not	PART	RB	Polarity=Neg	7	mod	_	_
 9	know	know	VERB	VB	VerbForm=Inf	7	comp:aux	_	SpaceAfter=No
 10	.	.	PUNCT	.	_	4	punct	_	_
@@ -171,7 +171,7 @@ pattern { X -[comp:pred]-> Y; Y[upos=SCONJ] }
 6	la	the	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
 7	Mauritanie	Mauritania	PROPN	_	_	9	subj	_	_
 8	n'	not	ADV	_	Polarity=Neg	9	mod	_	SpaceAfter=No
-9	est	is	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	comp:obj	_	_
+9	est	is	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	comp	_	_
 10	pas	not	ADV	_	Polarity=Neg	9	mod	_	_
 11	le	the	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
 12	Maroc	Morocco	PROPN	_	_	9	comp:pred	_	_

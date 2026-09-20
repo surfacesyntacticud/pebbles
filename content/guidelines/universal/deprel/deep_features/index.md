@@ -22,6 +22,6 @@ The deep features are:
 - [@tense](./tense.md)
 
 Deprecated deep features:
-- [@fixed](guidelines/universal/deprel/deep_features/deprecated/fixed)
-- [@scrap](guidelines/universal/deprel/deep_features/deprecated/scrap)
-- [@x](guidelines/universal/deprel/deep_features/deprecated/x)
+- [@fixed](guidelines/universal/deprel/deprecated/fixed)
+- [@scrap](guidelines/universal/deprel/deprecated/scrap)
+- [@x](guidelines/universal/deprel/deprecated/x)

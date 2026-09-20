@@ -23,7 +23,7 @@ An `ExtPos` feature can indicate the role of the foreign phrase.
 1	The	the	DET	RD	Definite=Def|PronType=Art	2	det	_	_
 2	influence	influence	NOUN	S	Number=Sing	5	subj	_	_
 3	of	of	ADP	E	_	2	udep	_	_
-4	Paris	Paris	PROPN	SP	_	3	comp:obj	_	_
+4	Paris	Paris	PROPN	SP	_	3	comp	_	_
 5	permeates	permeate	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 6	La	La	X	SW	ExtPos=PROPN|Foreign=Yes	5	comp:obj	_	highlight=red
 7	Comédie	Comédie	X	SW	Foreign=Yes	6	flat@foreign	_	SpaceAfter=No|highlight=red

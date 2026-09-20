@@ -20,7 +20,7 @@ The `punct` deprel should end with a leaf, with a few exceptions for notation li
 1	"	"	PUNCT	_	_	2	punct	_	SpaceAfter=No
 2	Mis	mettre	VERB	_	_	0	mod	_	_
 3	en	en	ADP	_	_	2	comp:obl	_	_
-4	place	place	NOUN	_	_	3	comp:obj	_	_
+4	place	place	NOUN	_	_	3	comp	_	_
 5	(	(	PUNCT	_	_	6	punct	_	SpaceAfter=No
 6	...	...	PUNCT	_	_	2	punct	_	SpaceAfter=No
 7	)	)	PUNCT	_	_	6	punct	_	_

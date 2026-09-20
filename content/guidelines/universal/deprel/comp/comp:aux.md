@@ -12,9 +12,9 @@ tags:
 
 The relation `comp:aux` is used for the argument of auxiliaries.
 It can be used with the following deep features:
- - [`@tense`](guidelines/universal/deprel/deep_features/tense.md)
- - [`@pass`](guidelines/universal/deprel/deep_features/pass.md)
- - [`@caus`](guidelines/universal/deprel/deep_features/caus.md)
+ - [`@tense`](guidelines/universal/deprel/deep_features/tense)
+ - [`@pass`](guidelines/universal/deprel/deep_features/pass)
+ - [`@caus`](guidelines/universal/deprel/deep_features/caus)
 
 <conll>
 # lang = English
@@ -61,7 +61,7 @@ Multiple auxiliaries, such as those permitted in [English varieties spoken in th
 # text = Ak by som mal podobnú šancu, ja ju nepremrhám.
 # text_en = If I had a similar chance, I wouldn't waste it
 1	Ak	ak	SCONJ	_	_	10	mod	_	Gloss=if
-2	by	by	AUX	_	_	1	comp:obj	_	Gloss=AUX.cond
+2	by	by	AUX	_	_	1	comp	_	Gloss=AUX.cond
 3	som	byť	AUX	_	_	2	comp:aux	_	Gloss=am
 4	mal	mať	VERB	_	_	3	comp:aux	_	Gloss=had
 5	podobnú	podobný	ADJ	_	_	6	mod	_	Gloss=similar
@@ -90,7 +90,7 @@ Multiple auxiliaries, such as those permitted in [English varieties spoken in th
 # text_en = It was agreed with the group of investors not to disclose any information.
 1	Mit	Mit	ADP	APPR	AdpType=Prep|Case=Dat	4	udep	_	Gloss=with
 2	der	der	DET	ART	Case=Dat|Gender=Fem|Number=Sing|PronType=Art	3	det	_	Gloss=the
-3	Investorengruppe	Gruppe	NOUN	NN	Gender=Fem|Number=Sing|Person=3	1	comp:obj	_	Gloss=investors_group
+3	Investorengruppe	Gruppe	NOUN	NN	Gender=Fem|Number=Sing|Person=3	1	comp	_	Gloss=investors_group
 4	sei	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	Gloss=was (past)
 5	Stillschweigen	Schweigen	NOUN	NN	Gender=Neut|Number=Sing|Person=3	4	subj@pass	_	Gloss=non-disclosure
 6	vereinbart	vereinbaren	VERB	VVPP	Aspect=Perf|VerbForm=Part	7	comp:aux@pass	_	Gloss=agreed

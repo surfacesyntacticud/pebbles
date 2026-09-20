@@ -30,7 +30,7 @@ In this sentence *I think* is a discourse marker because it lacks an object (the
 5	euh	euh	INTJ	_	_	7	discourse	_	Gloss=um|highlight=red
 6	,	,	PUNCT	_	_	5	punct	_	_
 7	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	_	Gloss=a|InIdiom=Yes|highlight=red
-8	peu	peu	NOUN	_	ExtPos=ADV	4	conj:dicto	_	Gloss=bit|Idiom=Yes
+8	peu	peu	NOUN	_	ExtPos=ADV	4	repair	_	Gloss=bit|Idiom=Yes
 9	choqués	choquer	VERB	_	_	2	comp:pred	_	Gloss=shocked
 10	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	11	subj	_	Gloss=I
 11	pense	penser	VERB	_	Number=Sing|Person=1	2	discourse	_	Gloss=think|highlight=red

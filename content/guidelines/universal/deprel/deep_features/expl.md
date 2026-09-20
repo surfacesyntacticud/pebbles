@@ -21,7 +21,7 @@ The `@expl` feature is used for arguments of predicates without semantic content
 3	also	also	ADV	_	_	4	mod	_	_
 4	desirable	desirable	ADJ	_	_	2	comp:pred	_	_
 5	to	to	PART	_	_	2	comp:obj@agent	_	_
-6	retain	retain	VERB	_	_	5	comp:obj	_	_
+6	retain	retain	VERB	_	_	5	comp	_	_
 7	them	them	PRON	_	_	6	comp:obj	_	_
 </conll>
 
@@ -32,7 +32,7 @@ The `@expl` feature is used for arguments of predicates without semantic content
 3	a	a	DET	_	_	4	det	_	_
 4	lot	lot	NOUN	_	_	2	mod	_	_
 5	in	in	PART	_	_	2	mod	_	_
-6	England	England	PROPN	_	_	5	comp:obj	_	_
+6	England	England	PROPN	_	_	5	comp	_	_
 </conll>
 
 In the conversion UD => SUD of `expl`, we use the relation `comp@expl`:

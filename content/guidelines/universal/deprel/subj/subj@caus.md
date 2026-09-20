@@ -10,7 +10,7 @@ tags:
 
 # Causative subject
 
-The `subj@caus` relation is used for subject in causative construction (see [`@caus`](guidelines/deep_features/caus.md)).
+The `subj@caus` relation is used for subject in causative construction (see [`@caus`](guidelines/universal/deprel/deep_features/caus)).
 
 <conll>
 # lang = French
@@ -26,8 +26,8 @@ The `subj@caus` relation is used for subject in causative construction (see [`@c
 8	rentrer	rentrer	VERB	_	VerbForm=Inf	6	comp:aux@caus	_	Subject=ObjRaising
 9	dans	dans	ADP	_	_	8	comp:obl	_	_
 10	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
-11	maison	maison	NOUN	_	Gender=Fem|Number=Sing	9	comp:obj	_	SpaceAfter=No
+11	maison	maison	NOUN	_	Gender=Fem|Number=Sing	9	comp	_	SpaceAfter=No
 </conll>
 
 > [!info]
-> This relation is used mainly in French and in Armenian. See [SUD treebanks `subj@caus`](https://tables.grew.fr/?data=sud_deps/DEPS&cols=subj@caus)
+> This relation is used mainly in French and in Armenian. See [SUD treebanks using `subj@caus`](https://tables.grew.fr/?data=sud_deps/DEPS&cols=subj@caus)

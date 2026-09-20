@@ -26,7 +26,7 @@ Note that in case of a LVC, the arguments of the LVC attached to the predicative
 3	face	face	NOUN	_	_	2	comp:obj@lvc	_	Gloss=face
 4	à	à	ADP	_	_	3	comp:obl	_	Gloss=to
 5	la	le	DET	_	_	6	det	_	Gloss=the
-6	situation	situation	NOUN	_	_	4	comp:obj	_	Gloss=situation
+6	situation	situation	NOUN	_	_	4	comp	_	Gloss=situation
 </conll>
 
 
@@ -46,7 +46,7 @@ This first criterion explains the differing interpretations of the following two
 4	date	date	NOUN	_	_	2	comp:obj@lvc	_	_
 5	with	with	ADJ	_	_	4	mod	_	_
 6	his	his	DET	_	_	7	det	_	_
-7	girlfriend	girlfriend	NOUN	_	_	5	comp:obj	_	_
+7	girlfriend	girlfriend	NOUN	_	_	5	comp	_	_
 </conll>
 
 <conll>
@@ -55,7 +55,7 @@ This first criterion explains the differing interpretations of the following two
 2	part	part	NOUN	_	_	1	comp:obj@lvc	_	_
 3	in	in	ADP	_	_	1	comp:obl	_	_
 4	the	the	DET	_	_	5	det	_	_
-5	discussion	discussion	NOUN	_	_	3	comp:obj	_	_
+5	discussion	discussion	NOUN	_	_	3	comp	_	_
 </conll>
 
 See [issue #5](https://github.com/surfacesyntacticud/guidelines/issues/5) for a discussion about light verb construction annotation in SUD.

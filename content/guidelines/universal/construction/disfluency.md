@@ -10,12 +10,16 @@ tags:
 
 
 In oral language, speakers form sentences while speaking, which means that sometimes they might search for words while speaking.
-
 They may repeat a word until they find the right one, or they may try with one word and then decide to change it.
+In SUD, we use two relations for the annotations of this contructions:
+ - [`repair`](guidelines/universal/deprel/repair) for repetition
+ - [`conj:reform`](guidelines/universal/deprel/conj/conj:reform) for reformulation
 
-## Repetitions and reformulations
+> [!note]
+> Up to version 2.18, the relation [`conj:dicto`](guidelines/universal/deprel/deprecated/conj:dicto) was used as a proxy for both repetitions and reformulations.
+> Some SUD treebanks were not updated and still use [`conj:dicto`](guidelines/universal/deprel/deprecated/conj:dicto) even if the relation is deprecated for new annotations.
 
-To analyse repetition or reformulation, we use the relation [`conj:dicto`](guidelines/deprel/conj:dicto).
+The next example shows French sentence with both annotations.
 
 <conll>
 # lang = French
@@ -25,22 +29,22 @@ To analyse repetition or reformulation, we use the relation [`conj:dicto`](guide
 2	,	,	PUNCT	_	_	1	punct	_	_
 3	et	et	CCONJ	_	_	5	cc	_	Gloss=and
 4	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	5	subj	_	SpaceAfter=No|Gloss=it
-5	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	Gloss=was
+5	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	Gloss=was|highlight=red
 6	,	,	PUNCT	_	_	9	punct	_	_
 7	bah	bah	INTJ	_	_	9	discourse	_	Gloss=well
 8	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	9	subj	_	SpaceAfter=No|Gloss=it
-9	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	5	conj:dicto	_	Gloss=was
+9	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	5	repair	_	Gloss=was|highlight=red
 10	super	super	ADJ	_	_	11	mod	_	Gloss=super
-11	bien	bien	ADV	_	_	9	mod	_	Gloss=well
+11	bien	bien	ADV	_	_	9	mod	_	Gloss=well|highlight=red
 12	,	,	PUNCT	_	_	15	punct	_	_
 13	euh	euh	INTJ	_	_	15	discourse	_	Gloss=um
 14	super	super	ADV	_	_	15	mod	_	Gloss=super
-15	spacieux	spacieux	ADJ	_	Gender=Masc	9	conj:dicto	_	Gloss=spacious
+15	spacieux	spacieux	ADJ	_	Gender=Masc	11	conj:reform	_	Gloss=spacious|highlight=red
 16	.	.	PUNCT	_	_	5	punct	_	_
 </conll>
-	
 
-The [`conj:dicto`](guidelines/deprel/conj:dicto) relation applies also when the linked words are not the same.
+
+The [`conj:reform`](guidelines/universal/deprel/conj/conj:reform) relation applies also when the linked words are not the same.
 
 <conll>
 # lang = French
@@ -50,17 +54,17 @@ The [`conj:dicto`](guidelines/deprel/conj:dicto) relation applies also when the 
 2	sait	savoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	Gloss=know
 3	euh	euh	INTJ	_	_	4	discourse	_	Gloss=um
 4	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	Gloss=the
-5	quantité	quantité	NOUN	_	Gender=Fem|Number=Sing	2	comp:obj	_	Gloss=quantity
+5	quantité	quantité	NOUN	_	Gender=Fem|Number=Sing	2	comp:obj	_	Gloss=quantity|highlight=red
 6	euh	euh	INTJ	_	_	5	discourse	_	Gloss=um
 7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	Gloss=the
-8	nombre	nombre	NOUN	conj:reform	Gender=Masc|Number=Sing	5	conj:dicto	_	Gloss=number
+8	nombre	nombre	NOUN	conj:reform	Gender=Masc|Number=Sing	5	conj:reform	_	Gloss=number|highlight=red
 9	de	de	ADP	_	_	8	udep	_	Gloss=of
-10	kilos	kilo	NOUN	_	Gender=Masc|Number=Plur	9	comp:obj	_	Gloss=kilos
-11	de	de	ADP	_	_	9	conj:dicto	_	Gloss=of
-12	litres	litre	NOUN	conj:reform	Gender=Masc|Number=Plur	11	comp:obj	_	Gloss=liters
+10	kilos	kilo	NOUN	_	Gender=Masc|Number=Plur	9	comp	_	Gloss=kilos
+11	de	de	ADP	_	_	9	repair	_	Gloss=of
+12	litres	litre	NOUN	conj:reform	Gender=Masc|Number=Plur	11	comp	_	Gloss=liters
 13	effectivement	effectivement	ADV	_	_	12	discourse	_	Gloss=actually
 14	de	de	ADP	_	_	12	udep	_	Gloss=of
-15	produits	produit	NOUN	_	Gender=Masc|Number=Plur	14	comp:obj	_	Gloss=products
+15	produits	produit	NOUN	_	Gender=Masc|Number=Plur	14	comp	_	Gloss=products
 </conll>
 
 ## Unfinished constructions
@@ -74,20 +78,20 @@ In this case, a word cannot be attached to its head, because the speaker decided
 # text_en = I'im reading his the portrayal of our of your hero
 1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	2	subj	_	Gloss=I
 2	lis	lire	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	Gloss=read
-3	son	son	DET	_	Number=Sing|PossNumber=Sing|PossPerson=3|PronType=Prs	5	det	_	Gloss=his
-4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	conj:dicto	_	Gloss=the
+3	son	son	DET	_	_	5	det	_	Gloss=his
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	repair	_	Gloss=the
 5	portrait	portrait	NOUN	_	Gender=Masc|Number=Sing	2	comp:obj	_	Gloss=portrayal
 6	de	de	ADP	_	_	5	udep	_	Gloss=of
-7	notre	son	DET	_	Number=Sing|Person=3|PossNumber=Plur|PossPerson=1|PronType=Prs	6	comp:obj	_	Gloss=our|Scrap=Yes|highlight=red
-8	de	de	ADP	_	_	6	conj:dicto	_	Gloss=of
-9	votre	son	DET	_	Number=Sing|Person=3|PossNumber=Plur|PossPerson=2|PronType=Prs	10	det	_	Gloss=your
-10	héros	héros	NOUN	_	Gender=Masc	8	comp:obj	_	Gloss=hero
+7	notre	son	DET	_	_	6	comp	_	Gloss=our|Scrap=Yes|highlight=red
+8	de	de	ADP	_	_	6	repair	_	Gloss=of
+9	votre	son	DET	_	_	10	det	_	Gloss=your
+10	héros	héros	NOUN	_	Gender=Masc	8	comp	_	Gloss=hero
 </conll>
 
-In this example, the construction *Je lis son le portrait de notre de votre héros* (English: *I'im reading his the portrayal of our of your hero*).
+In this example, the construction *Je lis son le portrait de notre de votre héros* (English: *I'm reading his the portrayal of our of your hero*).
 This construction causes some issues because we cannot attach the word *notre* to its semantic head *héros* because of the presence of the second *de*.
 
-If the sentence was *portrait de notre votre héros* (English: *portrayal of our your hero*) we could use the [`conj:dicto`](guidelines/deprel/conj:dicto) relation to attach *votre* to *notre*.
+If the sentence was *portrait de notre votre héros* (English: *portrayal of our your hero*) we could use the [`repair`](guidelines/universal/deprel/repair) relation to attach *votre* to *notre*.
 
 <conll>
 # lang = French
@@ -95,36 +99,40 @@ If the sentence was *portrait de notre votre héros* (English: *portrayal of our
 # text_en = portrayal of our your hero
 1	portrait	portrait	NOUN	_	Gender=Masc|Number=Sing	0	root	_	Gloss=portrayal
 2	de	de	ADP	_	_	1	udep	_	Gloss=of
-3	notre	son	DET	_	Number=Sing|Person=3|PossNumber=Plur|PossPerson=1|PronType=Prs	5	det	_	Gloss=our
-4	votre	son	DET	_	Number=Sing|Person=3|PossNumber=Plur|PossPerson=2|PronType=Prs	3	conj:dicto	_	Gloss=your
-5	héros	héros	NOUN	_	Gender=Masc	2	comp:obj	_	Gloss=hero
+3	notre	son	DET	_	_	5	det	_	Gloss=our
+4	votre	son	DET	_	_	3	repair	_	Gloss=your
+5	héros	héros	NOUN	_	Gender=Masc	2	comp	_	Gloss=hero
 </conll>
 
-In these cases, we prefer to attach the two words *de* with a [`repair`](guidelines/deprel/repair) relation and link the word *notre* to the first *de* as an incomplete object - [`comp:obj`] and add a feature [`Scrap=Yes`](guidelines/universal/feature/Scrap) to the object `notre`.
+In these cases, we prefer to attach the two words *de* with a [`repair`](guidelines/universal/deprel/repair) relation and link the word *notre* to the first *de* as an incomplete complement [`comp`](guidelines/universal/deprel/comp/comp) and add a feature [`Scrap=Yes`](guidelines/universal/feature/Scrap) to the complement `notre`.
 
 Below we can see an example when a speaker starts with one unfinished word *m~*, then decides it doesn't fit and searches for a more fitting word *virus*.
 
 <conll>
 # lang = French
-# text = c'est-à-dire que le m~ le le virus sait faire sa propre besogne de lui-même
-# text_en = that means that the virus can do its own work
-1	c'est-à-dire	c'est-à-dire	CCONJ	_	ExtPos=CCONJ	0	root	_	Gloss=that_means|Idiom=Yes
-2	que	que	SCONJ	_	_	1	comp:obj	_	Gloss=that|InIdiom=Yes
-3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	Gloss=the
-4	m~	m~	X	_	_	8	subj	_	highlight=red
-5	le	le	DET	conj:reform	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	Gloss=the
-6	le	le	DET	conj:reform	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	repair	_	Gloss=the
-7	virus	virus	NOUN	_	Gender=Masc	4	repair	_	Gloss=virus|highlight=red
-8	sait	savoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	comp:obj	_	Gloss=knows
-9	faire	faire	VERB	_	VerbForm=Inf	8	comp:obj	_	Gloss=make|Subject=SubjRaising
-10	sa	son	DET	_	Gender=Fem|Number=Sing|Person=3|PossNumber=Sing|PossPerson=3|PronType=Prs	12	det	_	Gloss=its
-11	propre	propre	ADJ	_	Number=Sing	12	mod	_	Gloss=own
-12	besogne	besogne	NOUN	_	Gender=Fem|Number=Sing	9	comp:obj	_	Gloss=work
-13	de	de	ADP	_	_	9	mod	_	Gloss=of
-14	lui-même	lui-même	PRON	_	_	13	comp:obj	_	Gloss=himself
+# text = c'est-à-dire que le m~, le, le virus sait faire sa propre besogne de lui-même sur place.
+1	c'est-à-dire	c'est-à-dire	CCONJ	_	ExtPos=CCONJ	10	cc	_	Idiom=Yes
+2	que	que	SCONJ	_	_	1	unk	_	InIdiom=Yes
+3	le	le	DET	_	_	4	det	_	_
+4	m~	m~	X	_	_	10	subj	_	highlight=red
+5	,	,	PUNCT	_	_	9	punct	_	_
+6	le	le	DET	_	_	9	det	_	_
+7	,	,	PUNCT	_	_	8	punct	_	_
+8	le	le	DET	_	_	6	repair	_	_
+9	virus	virus	NOUN	_	_	4	repair	_	highlight=red
+10	sait	savoir	VERB	_	_	0	root	_	_
+11	faire	faire	VERB	_	_	10	comp:obj	_	_
+12	sa	son	DET	_	_	14	det	_	_
+13	propre	propre	ADJ	_	_	14	mod	_	_
+14	besogne	besogne	NOUN	_	_	11	comp:obj	_	_
+15	de	de	ADP	_	_	11	mod	_	_
+16	lui-même	lui-même	PRON	_	_	15	comp	_	_
+17	sur	sur	ADP	_	_	11	mod	_	_
+18	place	place	NOUN	_	_	17	comp	_	_
+19	.	.	PUNCT	_	_	10	punct	_	_
 </conll>
 
 > [!warning]
-> In previous versions, the deep features [`@scrap`](guidelines/universal/deprel/deep_features/deprecated/scrap) was used for unfinished constructions.
-> This is now obsolete and should be used in SUD annotations.
+> In previous versions, the deep features [`@scrap`](guidelines/universal/deprel/deprecated/scrap) was used for unfinished constructions.
+> This is now deprecated and should be used in SUD annotations.
 

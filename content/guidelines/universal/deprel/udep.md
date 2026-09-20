@@ -21,7 +21,7 @@ This is because `obl` in UD can correspond to both `comp:obl` and `mod` in SUD.
 1	An	a	DET	_	_	2	det	_	_
 2	act	act	NOUN	_	_	0	root	_	_
 3	of	of	ADP	_	_	2	udep	_	_
-4	creation	creation	NOUN	_	_	3	comp:obj	_	_
+4	creation	creation	NOUN	_	_	3	comp	_	_
 </conll>
 
 <conll>
@@ -30,7 +30,7 @@ This is because `obl` in UD can correspond to both `comp:obl` and `mod` in SUD.
 2	smiles	smile	VERB	_	_	0	root	_	_
 3	at	at	ADP	_	_	2	udep	_	_
 4	this	this	DET	_	_	5	det	_	_
-5	discomfiture	discomfiture	NOUN	_	_	3	comp:obj	_	_
+5	discomfiture	discomfiture	NOUN	_	_	3	comp	_	_
 </conll>
 
 <conll>
@@ -42,7 +42,7 @@ This is because `obl` in UD can correspond to both `comp:obl` and `mod` in SUD.
 3	Juanjo	juanjo	PROPN	_	_	2	comp:obl	_	Gloss=Juanjo
 4	Ciércoles	ciércoles	PROPN	_	_	3	flat@name	_	Gloss=Ciércoles
 5	en	en	ADP	_	_	1	udep	_	Gloss=in
-6	Don	don	PROPN	_	_	5	comp:obj	_	Gloss=Don
+6	Don	don	PROPN	_	_	5	comp	_	Gloss=Don
 7	Balón	balón	PROPN	_	_	6	flat@name	_	Gloss=Balón
 </conll>
 
@@ -64,15 +64,15 @@ This is because `obl` in UD can correspond to both `comp:obl` and `mod` in SUD.
 12	te	te	AUX	_	_	13	aux	_	Gloss=marqueur du passé
 13	kenbe	kenbe	VERB	_	_	5	mod@relcl	_	Gloss=capturer
 14	pou	pou 	ADP	_	_	13	udep	_	Gloss=pour
-15	ranson	ranson	NOUN	_	_	14	comp:obj	_	Gloss=raison
+15	ranson	ranson	NOUN	_	_	14	comp	_	Gloss=raison
 16	an	an	DET	_	_	13	udep	_	Gloss=la
-17	2021	2021	NUM	_	_	16	comp:obj	_	Gloss=2021
+17	2021	2021	NUM	_	_	16	comp	_	Gloss=2021
 18	pandan	pandan	SCONJ	_	_	13	mod	_	Gloss=pendant
 19	yo	yo	PRON	_	_	21	subj	_	Gloss=ils
 20	t ap	t ap	AUX	_	_	21	aux	_	Gloss=marqueur du passé: travaillaient
-21	travay	travay 	VERB	_	_	18	comp:obj	_	Gloss=travailler
+21	travay	travay 	VERB	_	_	18	comp	_	Gloss=travailler
 22	pou	pou	ADP	_	_	21	udep	_	Gloss=pour
-23	Christian	Christian	PROPN	_	_	22	comp:obj	_	Gloss=Christian
+23	Christian	Christian	PROPN	_	_	22	comp	_	Gloss=Christian
 24	Aid	Aid 	PROPN	_	_	23	flat:foreign@name	_	Gloss=Aid
 25	Ministries	Ministries 	PROPN	_	_	24	flat:foreign@name	_	Gloss=Ministries
 26	ki	ki	PRON	_	_	27	subj	_	Gloss=qui
@@ -81,10 +81,10 @@ This is because `obl` in UD can correspond to both `comp:obl` and `mod` in SUD.
 29	jeneral	jeneral 	ADJ	_	_	28	mod	_	Gloss=général
 30	li	li 	DET	_	_	28	det	_	Gloss=son
 31	nan	nan 	ADP	_	_	27	udep	_	Gloss=dans
-32	Eta	Eta 	NOUN	_	_	31	comp:obj	_	Gloss=état
+32	Eta	Eta 	NOUN	_	_	31	comp	_	Gloss=état
 33	Ohio	Ohio	PROPN	_	_	32	udep	_	Gloss=Ohio
 34	nan	nan	ADP	_	_	32	mod	_	Gloss=dans
-35	sant	sant 	NOUN	_	_	34	comp:obj	_	Gloss=centre
+35	sant	sant 	NOUN	_	_	34	comp	_	Gloss=centre
 36	wès	wès 	NOUN	_	_	35	mod	_	Gloss=ouest
 37	Etazini	Etazini 	PROPN	_	_	35	udep	_	Gloss=Etats-Unis|SpaceAfter=No
 38	.	. 	PUNCT	_	_	1	punct	_	_

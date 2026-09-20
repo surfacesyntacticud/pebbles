@@ -11,7 +11,7 @@ tags:
 The `dislocated` relation is used to analyze detached elements that do not enter in the core grammatical relations of a sentence.
 
 > [!hint]
-> [Table of all SUD deprel with `discourse` as main rel](https://tables.grew.fr/?data=sud_deps/DEPS&cols=^discourse(@.*|:.*)?$)
+> [Table of all SUD deprel with `dislocated` as main rel](https://tables.grew.fr/?data=sud_deps/DEPS&cols=^dislocated(@.*|:.*)?$)
 
 <conll>
 # lang = French
@@ -26,7 +26,7 @@ The `dislocated` relation is used to analyze detached elements that do not enter
 7	silence	silence	NOUN	_	Gender=Masc|Number=Sing	2	dislocated	_	Gloss=silence|highlight=red
 8	autour	autour	ADV	_	_	7	mod	_	Gloss=around
 9	de	de	ADP	_	_	8	comp:obl	_	Gloss=of
-10	moi	lui	PRON	_	Number=Sing|Person=1|PronType=Prs	9	comp:obj	_	Gloss=me
+10	moi	lui	PRON	_	Number=Sing|Person=1|PronType=Prs	9	comp	_	Gloss=me
 </conll>
 
 <conll>
@@ -36,7 +36,7 @@ The `dislocated` relation is used to analyze detached elements that do not enter
 # text_en = Anything that will disturb my sleep, I don't like it.
 1	anyting	anyting	PRON	_	_	10	dislocated	_	AlignBegin=307870|AlignEnd=308103|Gloss=anything|highlight=red
 2	wey	wey	SCONJ	_	_	1	mod@relcl	_	AlignBegin=308103|AlignEnd=308335|Gloss=REL
-3	go	go	AUX	_	Aspect=Prosp	2	comp:obj	_	AlignBegin=308335|AlignEnd=308568|Gloss=PROSP
+3	go	go	AUX	_	Aspect=Prosp	2	comp	_	AlignBegin=308335|AlignEnd=308568|Gloss=PROSP
 4	disturb	disturb	VERB	_	_	3	comp:aux	_	AlignBegin=308568|AlignEnd=308801|Gloss=disturb
 5	my	my	PRON	_	Number=Sing|Person=1|Poss=Yes	6	mod:poss	_	AlignBegin=308801|AlignEnd=309034|Gloss=POSS.SG.1
 6	sleep	sleep	VERB	_	_	4	comp:obj	_	AlignBegin=309034|AlignEnd=309266|Gloss=sleep
@@ -61,7 +61,7 @@ This relation can also be used for pronouns which are detached from the core syn
 3	pense	penser	VERB	_	Number=Sing|Person=1	0	root	_	Gloss=think|highlight=red
 4	qu'	que	SCONJ	_	_	3	comp:obj	_	Gloss=that
 5	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	subj	_	Gloss=he
-6	vient	vient	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	comp:obj	_	Gloss=comes
+6	vient	vient	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	comp	_	Gloss=comes
 7	pas	pas	ADV	_	Polarity=Neg	6	mod	_	Gloss=not
 </conll>
 

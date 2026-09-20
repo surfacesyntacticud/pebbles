@@ -45,10 +45,9 @@ Here is a list of commonly used main relations in SUD, with their common extensi
  - [`cc`](guidelines/universal/deprel/cc)
  - [`compound`](guidelines/universal/deprel/compound)
  - [`conj`](guidelines/universal/deprel/conj)
-   - [`conj:appos`](guidelines/universal/deprel/conj/conj:appos)
    - [`conj:coord`](guidelines/universal/deprel/conj/conj:coord)
-   - [`conj:dicto`](guidelines/universal/deprel/conj/conj:dicto)
-   - `conj:reform`
+   - [`conj:appos`](guidelines/universal/deprel/conj/conj:appos)
+   - [`conj:reform`](guidelines/universal/deprel/conj/conj:reform)
  - `det`
  - [`discourse`](guidelines/universal/deprel/discourse)
  - [`dislocated`](guidelines/universal/deprel/dislocated)

@@ -20,5 +20,5 @@ The `subj@expl` relation indicates that the subject is present to fill in an obl
 2	pleut	pleuvoir	VERB	_	_	0	root	_	Gloss=rains
 3	dans	dans	ADP	_	_	2	mod	_	Gloss=in
 4	ma	son	DET	_	_	5	det	_	Gloss=my
-5	maison	maison	NOUN	_	_	3	comp:obj	_	Gloss=house
+5	maison	maison	NOUN	_	_	3	comp	_	Gloss=house
 </conll>

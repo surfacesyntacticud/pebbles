@@ -1,5 +1,8 @@
 ---
 title: parataxis main rel
+request: pattern { X -[1=parataxis]-> Y }
+scope:
+  schema: SUD
 type: doc
 tags:
  - deprel

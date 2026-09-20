@@ -17,10 +17,10 @@ The `comp:cleft` relation is used in cleft sentences for the dependency from the
 1	It	it	PRON	_	_	2	subj	_	_
 2	was	be	AUX	_	_	0	root	_	_
 3	from	from	ADP	_	_	2	comp:pred	_	_
-4	John	John	PROPN	_	_	3	comp:obj	_	_
+4	John	John	PROPN	_	_	3	comp	_	_
 5	that	that	SCONJ	_	_	2	comp:cleft	_	_
 6	she	she	PRON	_	_	7	subj	_	_
-7	heard	hear	VERB	_	_	5	comp:obj	_	_
+7	heard	hear	VERB	_	_	5	comp	_	_
 8	the	the	DET	_	_	9	det	_	_
 9	news	news	NOUN	_	_	7	comp:obj	_	_
 </conll>
@@ -39,22 +39,19 @@ The `comp:cleft` relation is used in cleft sentences for the dependency from the
 8	contrôle	contrôle	NOUN	_	Gender=Masc|Number=Sing	6	comp:obj	_	Gloss=control
 9	de	de	ADP	_	_	8	udep	_	Gloss=of
 10	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|Person=3|PronType=Art	11	det	_	Gloss=the
-11	situation	situation	NOUN	_	Gender=Fem|Number=Sing	9	comp:obj	_	Gloss=situation
+11	situation	situation	NOUN	_	Gender=Fem|Number=Sing	9	comp	_	Gloss=situation
 12	et	et	CCONJ	_	_	14	cc	_	Gloss=and
 13	qui	qui	PRON	_	PronType=Rel	14	subj	_	Gloss=who
 14	réprime	réprimer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	conj	_	Gloss=quells
 15	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|Person=3|PronType=Art	16	det	_	Gloss=a
 16	révolte	révolte	NOUN	_	Gender=Fem|Number=Sing	14	comp:obj	_	Gloss=revolt
-17-18	du	_	_	_	_	_	_	_	_
-17	de	de	ADP	_	_	16	udep	_	Gloss=of
-18	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|Person=3|PronType=Art	19	det	_	Gloss=the
-19	peuple	peuple	NOUN	_	Gender=Masc|Number=Sing	17	comp:obj	_	Gloss=people
-20	devant	devant	ADP	_	_	16	udep	_	Gloss=before
-21	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|Person=3|PronType=Art	22	det	_	Gloss=the
-22	cour	cour	NOUN	_	Gender=Fem|Number=Sing	20	comp:obj	_	Gloss=court
-23	royale	royal	ADJ	_	Gender=Fem|Number=Sing	22	mod	_	Gloss=royal
+17	du	du	ADP	_	_	16	udep	_	Gloss=of_the
+18	peuple	peuple	NOUN	_	Number=Sing	17	comp	_	Gloss=people
+19	devant	devant	ADP	_	_	16	udep	_	Gloss=before
+20	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	Gloss=the
+21	cour	cour	NOUN	_	Number=Sing	19	comp	_	Gender[lex]=Fem|Gloss=court
+22	royale	royal	ADJ	_	Gender=Fem|Number=Sing	21	mod	_	Gloss=royal
 </conll>
-
 
 Sometimes, there is an ambiguity between a relative clause and a cleft clause.
 Consider the sentence *It is the electric car that I chose*.

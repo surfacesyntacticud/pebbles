@@ -23,7 +23,7 @@ The relation `comp:obl` can have these deep features:
 2	belongs	belong	VERB	_	_	0	root	_	_
 3	to	to	ADP	_	_	2	comp:obl	_	_
 4	a	a	DET	_	_	5	det	_	_
-5	past	past	NOUN	_	_	3	comp:obj	_	_
+5	past	past	NOUN	_	_	3	comp	_	_
 </conll>
 
 <conll schema="ud">
@@ -43,9 +43,9 @@ The relation `comp:obl` can have these deep features:
 1	coming	come	VERB	_	_	0	root	_	_
 2	into	into	ADP	_	_	1	comp:obl	_	_
 3	the	the	DET	_	_	4	det	_	_
-4	area	area	NOUN	_	_	2	comp:obj	_	_
+4	area	area	NOUN	_	_	2	comp	_	_
 5	to	to	PART	_	_	1	comp:obl	_	_
-6	see	see	VERB	_	_	5	comp:obj	_	_
+6	see	see	VERB	_	_	5	comp	_	_
 7	concerts	concert	NOUN	_	_	6	comp:obj	_	_
 </conll>
 
@@ -73,7 +73,7 @@ Consider the two following examples:
 3	peur	peur	NOUN	_	Gender=Fem|Number=Sing	2	comp:obj@lvc	_	Gloss=fear
 4	de	de	ADP	_	_	3	comp:obl	_	Gloss=of
 5	l'	le	DET	_	Definite=Def|Number=Sing|Person=3|PronType=Art	6	det	_	Gloss=the
-6	araignée	araignée	PROPN	_	_	4	comp:obj	_	Gloss=spider
+6	araignée	araignée	PROPN	_	_	4	comp	_	Gloss=spider
 </conll>
 
 <conll>
@@ -85,7 +85,7 @@ Consider the two following examples:
 3	peur	peur	NOUN	_	_	2	comp:obj@lvc	_	Gloss=fear
 4	que	que	SCONJ	_	_	3	comp:obl	_	Gloss=that
 5	ça	ça	PRON	_	_	6	subj	_	Gloss=this
-6	marche	marcher	VERB	_	_	4	comp:obj	_	Gloss=works
+6	marche	marcher	VERB	_	_	4	comp	_	Gloss=works
 </conll>
 
 In the last sentence, *que ça marche* commutes with *de l'araignée*, therefore the relation going from *peur* to the head of the complement is labelled `comp:obl`.
@@ -106,7 +106,7 @@ This happens when the noun is part of a light verb construction (for more inform
 5	à	à	ADP	_	_	4	comp:obl	_	Gloss=to
 6	de	un	DET	_	Definite=Ind|Number=Plur|Person=3|PronType=Art	8	det	_	Gloss=of
 7	sérieux	sérieux	ADJ	_	Gender=Masc|Number=Plur	8	mod	_	Gloss=serious
-8	problèmes	problème	NOUN	_	Gender=Masc|Number=Plur	5	comp:obj	_	Gloss=problems
+8	problèmes	problème	NOUN	_	Gender=Masc|Number=Plur	5	comp	_	Gloss=problems
 </conll>
 
 ## Oblique complement of an adverb or an adjective
@@ -121,11 +121,11 @@ This happens when the noun is part of a light verb construction (for more inform
 4	pas	pas	ADV	_	Polarity=Neg	3	mod	_	_
 5	à	à	ADP	_	_	3	comp:obl	_	_
 6	la	lui	PRON	_	Emph=No|Gender=Fem|Number=Sing|Person=3|PronType=Prs	7	comp:obj	_	_
-7	recommander	recommander	VERB	_	VerbForm=Inf	5	comp:obj	_	Subject=SubjRaising
+7	recommander	recommander	VERB	_	VerbForm=Inf	5	comp	_	Subject=SubjRaising
 8	auprès	auprès	ADV	_	_	7	mod	_	_
 9	de	de	ADP	_	_	8	comp:obl	_	_
 10	notre	son	DET	_	Number=Sing|Number[psor]=Plur|Person[psor]=1|Poss=Yes|PronType=Prs	11	det	_	_
-11	entourage	entourage	NOUN	_	Gender=Masc|Number=Sing	9	comp:obj	_	SpaceAfter=No
+11	entourage	entourage	NOUN	_	Gender=Masc|Number=Sing	9	comp	_	SpaceAfter=No
 12	.	.	PUNCT	_	_	3	punct	_	_
 </conll>
 

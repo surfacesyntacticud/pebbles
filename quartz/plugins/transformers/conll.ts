@@ -11,8 +11,14 @@ export const Conll: QuartzTransformerPlugin = () => {
           return (tree: Root) => {
             visit(tree, "element", (node: Element) => {
               if (node.tagName === "conll") {
-                const color = (node.properties.schema === "ud") ? "rgb(216, 198, 214)" : "#fdf8ed";
-                const content = node.children
+                const color = 
+                  (node.properties.deprecated === "yes") 
+                    ? "rgb(255, 187, 187)" 
+                    : (node.properties.schema === "ud") 
+                      ? "rgb(216, 198, 214)" 
+                      : "#fdf8ed";
+                const content = 
+                node.children
                 .filter((child: any) => child.type === "text")
                 .map((child: any) => child.value)
                 .join("")

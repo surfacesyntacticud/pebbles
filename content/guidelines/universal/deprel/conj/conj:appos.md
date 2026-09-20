@@ -24,12 +24,12 @@ This relation `conj:appos` is used for appositions. In an apposition, conjuncts 
 4	allemand	allemand	ADJ	_	Gender=Masc|Number=Sing	3	mod	_	Gloss=German
 5	parle	parler	VERB	_	_	0	root	_	Gloss=talks
 6	de	de	ADP	_	_	5	comp:obl	_	Gloss=about|Scrap=Yes
-7	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	conj:dicto	_	Gloss=has
+7	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	repair	_	Gloss=has
 8	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	9	det	_	Gloss=a
 9	définition	définition	NOUN	_	Gender=Fem|Number=Sing	7	comp:obj	_	Gloss=definition
 10	de	de	ADP	_	_	9	udep	_	Gloss=of
 11	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	12	det	_	Gloss=the
-12	art	art	NOUN	_	Gender=Masc|Number=Sing	10	comp:obj	_	Gloss=art
+12	art	art	NOUN	_	Gender=Masc|Number=Sing	10	comp	_	Gloss=art
 </conll>
 
 <conll>
@@ -49,7 +49,7 @@ This relation `conj:appos` is used for appositions. In an apposition, conjuncts 
 # text_ortho = For jolijoli, we Naija rapper, Eva Allordiah.
 1	#	#	PUNCT	_	_	9	punct	_	AlignBegin=167560|AlignEnd=168740|Gloss=PUNCT
 2	for	for	ADP	_	_	9	mod:periph	_	AlignBegin=168740|AlignEnd=168990|Gloss=for
-3	jolijoli	jolijoli	NOUN	_	_	2	comp:obj	_	AlignBegin=168990|AlignEnd=169672|Gloss=enjoyment
+3	jolijoli	jolijoli	NOUN	_	_	2	comp	_	AlignBegin=168990|AlignEnd=169672|Gloss=enjoyment
 4	<	<	PUNCT	_	_	2	punct	_	AlignBegin=169672|AlignEnd=169672|Gloss=PUNCT
 5	#	#	PUNCT	_	_	2	punct	_	AlignBegin=169672|AlignEnd=169837|Gloss=PUNCT
 6	{	{	PUNCT	_	_	9	punct	_	AlignBegin=169672|AlignEnd=169837|Gloss=PUNCT

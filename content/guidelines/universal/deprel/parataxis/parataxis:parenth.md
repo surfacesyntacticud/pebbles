@@ -22,12 +22,12 @@ A parenthetical clause could form an independent sentence.
 3	fait	faire	AUX	DoubleAux	_	2	comp:aux	_	Gloss=made
 4	paraître	paraître	VERB	CAUSATIVE	VerbForm=Inf	3	comp:aux@caus	_	Gloss=released
 5	ce	ce	DET	_	_	7	det	_	Gloss=this
-6	ce	ce	DET	_	_	5	conj:dicto	_	_
+6	ce	ce	DET	_	_	5	repair	_	_
 7	chef	chef	NOUN	_	ExtPos=NOUN	4	comp:obj	_	Idiom=Yes|Gloss=chief|highlight=red
 8	-d'	d'	ADP	_	_	7	unk	_	Gloss=of|InIdiom=Yes
 9	oeuvre	oeuvre	NOUN	_	_	8	unk	_	Gloss=art|InIdiom=Yes
 10	pour	pour	ADP	_	_	13	mod	_	Gloss=for
-11	moi	lui	PRON	_	Number=Sing|Person=1|PronType=Prs	10	comp:obj	_	Gloss=me
+11	moi	lui	PRON	_	Number=Sing|Person=1|PronType=Prs	10	comp	_	Gloss=me
 12	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	13	subj	_	Gloss=it
 13	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	parataxis:parenth	_	Gloss=is|highlight=red
 14	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	15	det	_	Gloss=s
@@ -41,7 +41,7 @@ A parenthetical clause could form an independent sentence.
 22	Barrage	Barrage	NOUN	_	ExtPOS=PROPN	20	comp:obj	_	Gloss=dam|Title=Yes
 23	contre	contre	ADP	_	_	22	udep	_	Gloss=against|InTitle=Yes
 24	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	Gloss=the|InTitle=Yes
-25	Pacifique	Pacifique	PROPN	_	_	23	comp:obj	_	Gloss=Pacific|InTitle=Yes
+25	Pacifique	Pacifique	PROPN	_	_	23	comp	_	Gloss=Pacific|InTitle=Yes
 </conll>
 
 <conll>
@@ -54,7 +54,7 @@ A parenthetical clause could form an independent sentence.
 # text_en = From primary four (I was still seven at the time), one day, then my father just... my father just came to the school.
 # text_ortho = From primary four (dat time, I even still dey seven years, ), one day, naim my papa just, my papa just come school.
 1	from	from	ADP	_	_	29	mod:periph	_	AlignBegin=58888|AlignEnd=59237|Gloss=from
-2	primary	primary	NOUN	_	_	1	comp:obj	_	AlignBegin=59237|AlignEnd=59585|Gloss=primary
+2	primary	primary	NOUN	_	_	1	comp	_	AlignBegin=59237|AlignEnd=59585|Gloss=primary
 3	four	four	NUM	_	NumType=Card	2	mod:num	_	AlignBegin=59585|AlignEnd=59934|Gloss=four.CARD|highlight=red
 4	(	(	PUNCT	_	_	11	punct	_	AlignBegin=59934|AlignEnd=59934|Gloss=PUNCT
 5	dat	dat	DET	_	Number=Sing|PronType=Dem	6	det	_	AlignBegin=59934|AlignEnd=60283|Gloss=SG.DEM
@@ -78,7 +78,7 @@ A parenthetical clause could form an independent sentence.
 23	just	just	ADV	_	_	22	mod	_	AlignBegin=64468|AlignEnd=64816|Gloss=just|Scrap=Yes
 24	||	||	PUNCT	_	_	26	punct	_	AlignBegin=64816|AlignEnd=64816|Gloss=PUNCT
 25	my	my	PRON	_	Number=Sing|Person=1|Poss=Yes	26	mod:poss	_	AlignBegin=64816|AlignEnd=65165|Gloss=POSS.SG.1
-26	papa	papa	NOUN	_	_	22	conj:dicto	_	AlignBegin=65165|AlignEnd=65514|Gloss=papa
+26	papa	papa	NOUN	_	_	22	repair	_	AlignBegin=65165|AlignEnd=65514|Gloss=papa
 27	}	}	PUNCT	_	_	22	punct	_	AlignBegin=65165|AlignEnd=65514|Gloss=PUNCT
 28	just	just	ADV	_	_	29	mod	_	AlignBegin=65514|AlignEnd=65863|Gloss=just
 29	come	come	VERB	_	_	0	root	_	AlignBegin=65863|AlignEnd=66211|Gloss=come

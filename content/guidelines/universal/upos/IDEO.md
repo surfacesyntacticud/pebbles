@@ -32,27 +32,27 @@ tags:
 </conll>
 
 > [!hint]
-```coversion
-  rule IDEO_with_extpos {
-    pattern { N[upos=IDEO, ExtPos] }
-    commands { 
-      N.upos=N.ExtPos;
-      N.Ideophon=Yes; 
-      del_feat N.ExtPos;
-      del_feat N.Gender;
-      del_feat N.Definite;
-      del_feat N.PronType;
-    }
-  }
-
-  rule IDEO_without_extpos {
-    pattern { N[upos=IDEO, !ExtPos] }
-    commands { 
-      N.upos=X; 
-      N.Ideophon=Yes; 
-      del_feat N.Gender;
-      del_feat N.Definite;
-      del_feat N.PronType;
-    }
-  }
-```
+> ```conversion
+>   rule IDEO_with_extpos {
+>     pattern { N[upos=IDEO, ExtPos] }
+>     commands { 
+>       N.upos=N.ExtPos;
+>       N.Ideophon=Yes; 
+>       del_feat N.ExtPos;
+>       del_feat N.Gender;
+>       del_feat N.Definite;
+>       del_feat N.PronType;
+>     }
+>   }
+> 
+>   rule IDEO_without_extpos {
+>     pattern { N[upos=IDEO, !ExtPos] }
+>     commands { 
+>       N.upos=X; 
+>       N.Ideophon=Yes; 
+>       del_feat N.Gender;
+>       del_feat N.Definite;
+>       del_feat N.PronType;
+>     }
+>   }
+> ```

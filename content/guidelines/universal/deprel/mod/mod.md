@@ -28,7 +28,7 @@ The `mod` relation is used for modifiers of verbs, nouns, adjectives, adverbs, a
 5	many	many	ADJ	_	_	8	mod	_	_
 6	different	different	ADJ	_	_	8	mod	_	_
 7	language	language	NOUN	_	_	8	compound	_	_
-8	groups	group	NOUN	_	_	3	comp:obj	_	_
+8	groups	group	NOUN	_	_	3	comp	_	_
 </conll>
 
 <conll>
@@ -39,7 +39,7 @@ The `mod` relation is used for modifiers of verbs, nouns, adjectives, adverbs, a
 1	je	moi	PRON	_	_	2	subj	_	Gloss=I
 2	reviendrais	revenir	VERB	_	_	0	root	_	highlight=red|Gloss=be_back
 3	avec	avec	ADP	_	_	2	mod	_	highlight=red|Gloss=with
-4	plaisir	plaisir	NOUN	_	_	3	comp:obj	_	Gloss=pleasure
+4	plaisir	plaisir	NOUN	_	_	3	comp	_	Gloss=pleasure
 5	!	!	PUNCT	_	_	2	punct	_	_
 </conll>
 

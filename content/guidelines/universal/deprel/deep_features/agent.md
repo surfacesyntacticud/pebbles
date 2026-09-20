@@ -25,7 +25,7 @@ Typical cases are passive, causative, and impersonal constructions.
 2	was	be	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 3	interviewed	interview	VERB	_	Tense=Past|VerbForm=Part|Voice=Pass	2	comp:aux@pass	_	_
 4	by	by	ADP	_	_	3	comp:obl@agent	_	_
-5	Wikinews	Wikinews	PROPN	_	Number=Sing	4	comp:obj	_	_
+5	Wikinews	Wikinews	PROPN	_	Number=Sing	4	comp	_	_
 6	.	.	PUNCT	.	_	2	punct	_	_
 </conll>
 

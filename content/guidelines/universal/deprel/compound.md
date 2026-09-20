@@ -20,7 +20,7 @@ SUD annotations for some languages, such as French, do not use the `compound` re
 5	into	into	ADP	IN	_	1	udep	_	_
 6	a	a	DET	DT	Definite=Ind|PronType=Art	8	det	_	_
 7	small	small	ADJ	JJ	Degree=Pos	8	mod	_	_
-8	bowl	bowl	NOUN	NN	Number=Sing	5	comp:obj	_	_
+8	bowl	bowl	NOUN	NN	Number=Sing	5	comp	_	_
 9	and	and	CCONJ	CC	_	10	cc	_	_
 10	add	add	VERB	VB	Mood=Imp|Person=2|VerbForm=Fin	1	conj	_	_
 11	the	the	DET	DT	Definite=Def|PronType=Art	13	det	_	_

@@ -38,9 +38,9 @@ pattern { X[Title] }
 4	Flew	fly	VERB	_	ExtPos=PROPN	2	comp:obj	_	Title=Yes|highlight=red
 5	Over	over	ADP	_	_	4	comp:obl	_	InTitle=Yes|highlight=red
 6	the	the	DET	_	_	7	det	_	InTitle=Yes|highlight=red
-7	Cuckoo	cuckoo	NOUN	_	_	8	comp:obj	_	InTitle=Yes|highlight=red
+7	Cuckoo	cuckoo	NOUN	_	_	8	comp	_	InTitle=Yes|highlight=red
 8	's	's	PART	_	_	9	mod@poss	_	InTitle=Yes|highlight=red
-9	Nest	nest	VERB	_	_	5	comp:obj	_	InTitle=Yes|highlight=red
+9	Nest	nest	VERB	_	_	5	comp	_	InTitle=Yes|highlight=red
 </conll>
 
 <conll>
@@ -64,7 +64,7 @@ pattern { X[Title] }
 5	go	go	VERB	_	_	4	comp:aux	_	_
 6	hand	hand	NOUN	_	ExtPos=ADV|Idiom=Yes	5	mod	_	highlight=red
 7	in	in	ADP	_	InIdiom=Yes	6	udep	_	highlight=red
-8	hand	hand	NOUN	_	InIdiom=Yes	7	comp:obj	_	highlight=red
+8	hand	hand	NOUN	_	InIdiom=Yes	7	comp	_	highlight=red
 </conll>
 
 <conll>
@@ -91,7 +91,7 @@ When there is no clear internal syntactic structure, the relation `unk` is used.
 8	soon	soon	ADV	_	_	7	unk	_	InIdiom=Yes|highlight=red
 9	as	as	SCONJ	_	_	8	unk	_	InIdiom=Yes|highlight=red
 10	you	you	PRON	_	_	11	subj	_	_
-11	can	can	AUX	_	_	7	comp:obj	_	_
+11	can	can	AUX	_	_	7	comp	_	_
 </conll>
 
 <conll>

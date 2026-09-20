@@ -32,7 +32,7 @@ The backchannel feature is encoded as such: `Backchannel=⟨sent_id⟩::⟨tok_i
 5	chacun	chacun	PRON	_	Gender=Masc|PronType=Ind|Shared=Yes	6	subj	_	Number[lex]=Sing|Person[lex]=3
 6	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	highlight=red
 7	,	,	PUNCT	_	_	8	punct	_	_
-8	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	conj:dicto	_	_
+8	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	repair	_	_
 9	où	où	ADV	_	PronType=Rel	8	comp:obl	_	_
 10	il	lui	PRON	_	Case=Nom|Emph=No|Gender=Masc|Number=Sing|PronType=Prs	11	subj	_	Person[lex]=3
 11	veut	vouloir	VERB	_	Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin	9	mod@relcl	_	Person[ctxt]=3|SpaceAfter=No
@@ -47,7 +47,7 @@ The backchannel feature is encoded as such: `Backchannel=⟨sent_id⟩::⟨tok_i
 # text_en = um, um.
 1	mh	mh	INTJ	_	_	0	root	_	Backchannel=Rhap_D0009-205::6|SpaceAfter=No|highlight=red
 2	,	,	PUNCT	_	_	3	punct	_	_
-3	mh	mh	INTJ	_	_	1	conj:dicto	_	_
+3	mh	mh	INTJ	_	_	1	conj:coord	_	_
 4	.	.	PUNCT	_	_	1	punct	_	_
 </conll>
 
@@ -75,29 +75,21 @@ Here is a long sentence with two backchannels, each with a different `tok_id`.
 13	c'	ce	PRON	_	PronType=Dem	14	subj	_	AlignBegin=130182|AlignEnd=130302|Gender[lex]=Masc|Number[lex]=Sing|Person[lex]=3|SpaceAfter=No
 14	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	conj:dicto	_	AlignBegin=130302|AlignEnd=130412
 15	une	un	PRON	_	Gender=Fem|Number=Sing|PronType=Ind	14	comp:pred	_	AlignBegin=130412|AlignEnd=130508|Person[lex]=3
-16-17	des	_	_	_	_	_	_	_	SpaceAfter=No
-16	de	de	ADP	_	_	15	comp:obl	_	AlignBegin=130508|AlignEnd=131042
-17	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	16	comp:obj	_	AlignBegin=130508|AlignEnd=131042|Scrap=Yes
-18	,	,	PUNCT	_	_	19	punct	_	AlignBegin=131042|AlignEnd=131210
-19-20	des	_	_	_	_	_	_	_	SpaceAfter=No
-19	de	de	ADP	_	_	16	conj:dicto	_	AlignBegin=131210|AlignEnd=132165
-20	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	19	comp:obj	_	AlignBegin=131210|AlignEnd=132165|Scrap=Yes
-21	,	,	PUNCT	_	_	23	punct	_	AlignBegin=132165|AlignEnd=132944
-22	c'	ce	PRON	_	PronType=Dem	23	subj	_	AlignBegin=132944|AlignEnd=132999|Gender[lex]=Masc|Number[lex]=Sing|Person[lex]=3|SpaceAfter=No
-23	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	conj:dicto	_	AlignBegin=132999|AlignEnd=133159
-24	une	un	PRON	_	Gender=Fem|Number=Sing|PronType=Ind	23	comp:pred	_	AlignBegin=133159|AlignEnd=133479|Person[lex]=3
-25-26	des	_	_	_	_	_	_	_	_
-25	de	de	ADP	_	_	24	comp:obl	_	AlignBegin=133479|AlignEnd=133739
-26	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	27	det	_	AlignBegin=133479|AlignEnd=133739
-27	mesures	mesure	NOUN	_	_	25	comp:obj	_	AlignBegin=133739|AlignEnd=134149|Gender[lex]=Fem|Number[ctxt]=Plur
-28-29	du	_	_	_	_	_	_	_	_
-28	de	de	ADP	_	_	27	udep	_	AlignBegin=134149|AlignEnd=134249
-29	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	AlignBegin=134149|AlignEnd=134249
-30	plan	plan	NOUN	_	_	28	comp:obj	_	AlignBegin=134249|AlignEnd=134469|Gender[lex]=Masc|Number[ctxt]=Sing
-31	banlieue	banlieue	NOUN	_	_	30	mod	_	AlignBegin=134469|AlignEnd=134823|Gender[lex]=Fem|Number[ctxt]=Sing
-32	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	det	_	AlignBegin=134823|AlignEnd=134938|HasSpokenGender=OnlySingExceptWithLiaison|Overlap=Rhap_D0002-42
-33	busing	busing	NOUN	_	_	23	dislocated:subj	_	AlignBegin=134938|AlignEnd=135379|Gender[lex]=Masc|Number[ctxt]=Sing|Overlap=Rhap_D0002-44|SpaceAfter=No
-34	.	.	PUNCT	_	_	10	punct	_	AlignBegin=135379|AlignEnd=135379|Overlap=Rhap_D0002-37ter
+16	des	de	ADP	_	_	15	comp:obl	_	AlignBegin=130508|AlignEnd=131042
+17	,	,	PUNCT	_	_	18	punct	_	AlignBegin=131042|AlignEnd=131210
+18	des	de	ADP	_	_	16	conj:dicto	_	AlignBegin=131210|AlignEnd=132165
+19	,	,	PUNCT	_	_	21	punct	_	AlignBegin=132165|AlignEnd=132944
+20	c'	ce	PRON	_	PronType=Dem	21	subj	_	AlignBegin=132944|AlignEnd=132999|Gender[lex]=Masc|Number[lex]=Sing|Person[lex]=3|SpaceAfter=No
+21	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	conj:dicto	_	AlignBegin=132999|AlignEnd=133159
+22	une	un	PRON	_	Gender=Fem|Number=Sing|PronType=Ind	21	comp:pred	_	AlignBegin=133159|AlignEnd=133479|Person[lex]=3
+23	des	de	ADP	_	_	22	comp:obl	_	AlignBegin=133479|AlignEnd=133739
+24	mesures	mesure	NOUN	_	_	23	comp	_	AlignBegin=133739|AlignEnd=134149|Gender[lex]=Fem|Number[ctxt]=Plur
+25	du	du	ADP	_	_	24	udep	_	AlignBegin=134149|AlignEnd=134249
+26	plan	plan	NOUN	_	_	25	comp	_	AlignBegin=134249|AlignEnd=134469|Gender[lex]=Masc|Number[ctxt]=Sing
+27	banlieue	banlieue	NOUN	_	_	26	mod	_	AlignBegin=134469|AlignEnd=134823|Gender[lex]=Fem|Number[ctxt]=Sing
+28	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	AlignBegin=134823|AlignEnd=134938|HasSpokenGender=OnlySingExceptWithLiaison|Overlap=Rhap_D0002-42
+29	busing	busing	NOUN	_	_	21	dislocated:subj	_	AlignBegin=134938|AlignEnd=135379|Gender[lex]=Masc|Number[ctxt]=Sing|Overlap=Rhap_D0002-44|SpaceAfter=No
+30	.	.	PUNCT	_	_	10	punct	_	AlignBegin=135379|AlignEnd=135379|Overlap=Rhap_D0002-37ter
 </conll>
 
 <conll>
@@ -107,7 +99,7 @@ Here is a long sentence with two backchannels, each with a different `tok_id`.
 # text_en = um, um.
 1	mh	mh	INTJ	_	_	0	root	_	AlignBegin=134823|AlignEnd=135379|Backchannel=Rhap_D0002-42::4|Overlap=Rhap_D0002-42|SpaceAfter=No|highlight=red
 2	,	,	PUNCT	_	_	3	punct	_	AlignBegin=135379|AlignEnd=134823|Overlap=Rhap_D0002-37
-3	mh	mh	INTJ	_	_	1	discourse	_	AlignBegin=134823|AlignEnd=135379|Overlap=Rhap_D0002-42|SpaceAfter=No
+3	mh	mh	INTJ	_	_	1	conj:coord	_	AlignBegin=134823|AlignEnd=135379|Overlap=Rhap_D0002-42|SpaceAfter=No
 4	.	.	PUNCT	_	_	1	punct	_	AlignBegin=135379|AlignEnd=135379|Overlap=Rhap_D0002-37
 </conll>
 
@@ -118,7 +110,7 @@ Here is a long sentence with two backchannels, each with a different `tok_id`.
 # text_en = um, um.
 1	mh	mh	INTJ	_	_	0	root	_	AlignBegin=0|AlignEnd=0|Backchannel=Rhap_D0002-42::10|Overlap=Rhap_D0002-42|SpaceAfter=No|highlight=red
 2	,	,	PUNCT	_	_	3	punct	_	AlignBegin=0|AlignEnd=0|Overlap=Rhap_D0002-37
-3	mh	mh	INTJ	_	_	1	discourse	_	AlignBegin=0|AlignEnd=0|Overlap=Rhap_D0002-42|SpaceAfter=No
+3	mh	mh	INTJ	_	_	1	conj:coord	_	AlignBegin=0|AlignEnd=0|Overlap=Rhap_D0002-42|SpaceAfter=No
 4	.	.	PUNCT	_	_	1	punct	_	AlignBegin=0|AlignEnd=0|Overlap=Rhap_D0002-37
 </conll>
 
