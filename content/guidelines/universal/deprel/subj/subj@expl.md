@@ -10,7 +10,7 @@ tags:
 
 # Expletive subject
 
-The `subj@expl` relation indicates that the subject is present to fill in an obligatory syntactic position but it has no semantic content (see [`@expl`](guidelines/deep_features/expl.md)).
+The `subj@expl` relation indicates that the subject is present to fill in an obligatory syntactic position but it has no semantic content (see [`@expl`](guidelines/universal/deprel/deep_features/expl)).
 
 <conll>
 # lang = French

@@ -26,4 +26,5 @@ The `mod@relcl` relation is used for relative clauses (see [`@relcl`](guidelines
 </conll>
 
 > [!info]
-> This relation is used in most SUD treebanks. See [SUD treebanks `mod@relcl`](https://tables.grew.fr/?data=sud_deps/DEPS&cols=^mod@relcl$)
+> This relation is used in most SUD treebanks.
+> See [SUD treebanks `mod@relcl`](https://tables.grew.fr/?data=sud_deps/DEPS&cols=^mod@relcl$)

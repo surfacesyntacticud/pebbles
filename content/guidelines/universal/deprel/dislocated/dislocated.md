@@ -1,6 +1,6 @@
 ---
 title: dislocated
-request: pattern { X -[1=dislocated]-> Y }
+request: pattern { X -[dislocated]-> Y }
 scope:
   schema: SUD
 type: doc
@@ -8,26 +8,7 @@ tags:
  - deprel
 ---
 
-The `dislocated` relation is used to analyze detached elements that do not enter in the core grammatical relations of a sentence.
-
-> [!hint]
-> [Table of all SUD deprel with `dislocated` as main rel](https://tables.grew.fr/?data=sud_deps/DEPS&cols=^dislocated(@.*|:.*)?$)
-
-<conll>
-# lang = French
-# text = ça a duré dix ans le silence autour de moi
-# text_en = the silence around me lasted for ten years
-1	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	2	subj	_	Gloss=that
-2	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	Gloss=has|highlight=red
-3	duré	durer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	comp:aux	_	Gloss=lasted
-4	dix	dix	NUM	_	Number=Plur	5	det	_	Gloss=ten
-5	ans	an	NOUN	_	Gender=Masc|Number=Plur	3	comp:obj	_	Gloss=years
-6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	Gloss=the
-7	silence	silence	NOUN	_	Gender=Masc|Number=Sing	2	dislocated	_	Gloss=silence|highlight=red
-8	autour	autour	ADV	_	_	7	mod	_	Gloss=around
-9	de	de	ADP	_	_	8	comp:obl	_	Gloss=of
-10	moi	lui	PRON	_	Number=Sing|Person=1|PronType=Prs	9	comp	_	Gloss=me
-</conll>
+The dislocated `relation` without subrelation is used when the function is not annotated or unclear. 
 
 <conll>
 # lang = Naija
@@ -51,19 +32,6 @@ The `dislocated` relation is used to analyze detached elements that do not enter
 
 
 This relation can also be used for pronouns which are detached from the core syntactic structure of an utterance, such as French tonic pronouns.
-
-<conll>
-# lang = French
-# text = Moi je pense qu' il vient pas
-# text_en = I think he is not coming
-1	Moi	lui	PRON	_	Number=Sing|Person=1|PronType=Prs	3	dislocated	_	Gloss=me|highlight=red
-2	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	3	subj	_	Gloss=I
-3	pense	penser	VERB	_	Number=Sing|Person=1	0	root	_	Gloss=think|highlight=red
-4	qu'	que	SCONJ	_	_	3	comp:obj	_	Gloss=that
-5	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	subj	_	Gloss=he
-6	vient	vient	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	comp	_	Gloss=comes
-7	pas	pas	ADV	_	Polarity=Neg	6	mod	_	Gloss=not
-</conll>
 
 <conll>
 # lang = Naija
@@ -95,7 +63,6 @@ In case of multiple propositions in one sentence, `dislocated` is used when the 
 11	bien	bien	ADV	_	_	9	mod	_	Gloss=well
 12	avec	avec	ADP	_	_	9	comp:obl	_	Gloss=with
 </conll>
-
 
 In this sentence, the proposition *J'ai des copines* (*I have some friends*) doesn't provide any information.
 The fact that the speaker has some friends is considered as obvious and we cannot negate it or question it.

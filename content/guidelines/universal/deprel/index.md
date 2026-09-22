@@ -49,25 +49,26 @@ Here is a list of commonly used main relations in SUD, with their common extensi
    - [`conj:appos`](guidelines/universal/deprel/conj/conj:appos)
    - [`conj:reform`](guidelines/universal/deprel/conj/conj:reform)
  - `det`
- - [`discourse`](guidelines/universal/deprel/discourse)
+ - [`discourse`](guidelines/universal/deprel/discourse/discourse)
+   - [`discourse:filler`](guidelines/universal/deprel/discourse/discourse:filler)
+   - [`discourse:tag`](guidelines/universal/deprel/discourse/discourse:tag)
  - [`dislocated`](guidelines/universal/deprel/dislocated)
-   - `dislocated:mod`
-   - `dislocated:obj`
-   - `dislocated:obl`
-   - `dislocated:subj`
-   - `dislocated:unk`
+   - [`dislocated:mod`](guidelines/universal/deprel/dislocated/dislocated:mod)
+   - [`dislocated:obj`](guidelines/universal/deprel/dislocated/dislocated:obj)
+   - [`dislocated:obl`](guidelines/universal/deprel/dislocated/dislocated:obl)
+   - [`dislocated:subj`](guidelines/universal/deprel/dislocated/dislocated:subj)
  - [`flat`](guidelines/universal/deprel/flat)
-   - `flat@foreign`
-   - `flat@name`
+   - [`flat@foreign`](guidelines/universal/deprel/deep_features/foreign)
+   - [`flat@name`](guidelines/universal/deprel/deep_features/name)
  - `goeswith`
  - `orphan`
- - `parataxis`
-   - `parataxis:insert`
-   - `parataxis:parenth`
+ - [`parataxis`](guidelines/universal/deprel/parataxis/parataxis)
+   - [`parataxis:insert`](guidelines/universal/deprel/parataxis/parataxis:insert)
+   - [`parataxis:parenth`](guidelines/universal/deprel/parataxis/parataxis:parenth)
  - `punct`
- - `repair`
+ - [`repair`](guidelines/universal/deprel/repair)
  - `root`
- - [`vocative`](guidelines/universal/deprel/flat)
+ - [`vocative`](guidelines/universal/deprel/vocative)
 
 > [!note]
 > In treebanks converted from UD to SUD, other deep extensions may appear.
