@@ -30,13 +30,13 @@ The backchannel feature is encoded as such: `Backchannel=⟨sent_id⟩::⟨tok_i
 3	bon	bon	INTJ	_	_	6	discourse	_	_
 4	,	,	PUNCT	_	_	3	punct	_	_
 5	chacun	chacun	PRON	_	Gender=Masc|PronType=Ind|Shared=Yes	6	subj	_	Number[lex]=Sing|Person[lex]=3
-6	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	highlight=red
-7	,	,	PUNCT	_	_	8	punct	_	_
-8	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	repair	_	_
+6	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	reparandum	_	highlight=red
+7	,	,	PUNCT	_	_	6	punct	_	_
+8	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 9	où	où	ADV	_	PronType=Rel	8	comp:obl	_	_
 10	il	lui	PRON	_	Case=Nom|Emph=No|Gender=Masc|Number=Sing|PronType=Prs	11	subj	_	Person[lex]=3
 11	veut	vouloir	VERB	_	Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin	9	mod@relcl	_	Person[ctxt]=3|SpaceAfter=No
-12	.	.	PUNCT	_	_	6	punct	_	_
+12	.	.	PUNCT	_	_	8	punct	_	_
 </conll>
 
 <conll>

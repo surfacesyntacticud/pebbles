@@ -27,4 +27,4 @@ In the three cases, the relation relates the first conjunct to the second one, t
 
 > [!warning]
 > Previously, the relation `conj:dicto` was used both for reformulation ans for disluencies.
-> `conj:dicto` is now deprecated and should be replaced by [`conj:reform`](conj:reform) for reformulations and by[`repair`](repair) for disfluencies.
+> `conj:dicto` is now deprecated and should be replaced by [`conj:reform`](conj:reform) for reformulations and by[`reparandum`](reparandum) for disfluencies.

@@ -11,8 +11,8 @@ tags:
 
 
 The `conj:reform` relation is specific to spoken language and it is used to link elements in a reformulation.
-The first element id a complete utterance (for uncomplete utterence, the [`repair`](guidelines/universal/deprel/repair) relation is used).
-The second element is similar (often reusin gthe same wording and giving more details) and can replaced the first one. 
+The first element is a complete utterance (for uncomplete utterence, the [`reparandum`](guidelines/universal/deprel/reparandum) relation is used).
+The second element is similar (often reusing the same wording and giving more details) and can replaced the first one. 
 
 <conll>
 # lang = French
@@ -44,13 +44,13 @@ The relation `conj:reform`, on the other hand, is used to link two denotations o
 # text = puisque les les les les c~ les capitales les grandes villes ne me disaient rien du tout
 # text_en = since I didn't know anything at all about the the the the c ~ the capitals the big cities
 1	puisque	puisque	SCONJ	_	_	0	root	_	Gloss=since
-2	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	6	det	_	Gloss=the
-3	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	2	repair	_	Gloss=the
-4	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	3	repair	_	Gloss=the
-5	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	4	repair	_	Gloss=the
-6	c~	c~	X	_	_	14	subj	_	_
+2	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	3	reparandum	_	Gloss=the
+3	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	4	reparandum	_	Gloss=the
+4	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	5	reparandum	_	Gloss=the
+5	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	6	det	_	Gloss=the
+6	c~	c~	X	_	_	8	reparandum	_	_
 7	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	8	det	_	Gloss=the
-8	capitales	capitale	NOUN	_	Gender=Fem|Number=Plur	6	repair	_	Gloss=capitals|highlight=red
+8	capitales	capitale	NOUN	_	Gender=Fem|Number=Plur	14	subj	_	Gloss=capitals|highlight=red
 9	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	11	det	_	Gloss=the
 10	grandes	grand	ADJ	_	Gender=Fem|Number=Plur	11	mod	_	Gloss=big
 11	villes	ville	NOUN	_	Gender=Fem|Number=Plur	8	conj:reform	_	Gloss=cities|highlight=red

@@ -66,7 +66,7 @@ Here is a list of commonly used main relations in SUD, with their common extensi
    - [`parataxis:insert`](guidelines/universal/deprel/parataxis/parataxis:insert)
    - [`parataxis:parenth`](guidelines/universal/deprel/parataxis/parataxis:parenth)
  - `punct`
- - [`repair`](guidelines/universal/deprel/repair)
+ - [`reparandum`](guidelines/universal/deprel/reparandum)
  - `root`
  - [`vocative`](guidelines/universal/deprel/vocative)
 

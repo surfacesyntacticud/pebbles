@@ -21,10 +21,10 @@ The `dislocated:obj` relation is used between a dislocated object and its head.
 4	la	lui	PRON	_	Case=Acc|Emph=No|Gender=Fem|Number=Sing|PronType=Prs	5	comp:obj	_	Person[lex]=3
 5	connaissez	connaître	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	highlight=red
 6	tous	tous	PRON	_	Gender=Masc|PronType=Ind	5	mod	_	Number[lex]=Plur|Person[lex]=3
-7	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	11	det	_	HasSpokenGender=OnlySingExceptWithLiaison
-8	euh	euh	INTJ	_	_	10	discourse:filler	_	SpaceAfter=No
-9	,	,	PUNCT	_	_	8	punct	_	_
-10	cette	ce	DET	_	Number=Sing|PronType=Dem	7	repair	_	Gender[ctxt]=Fem|HasSpokenGender=OnlySingExceptWithLiaison|LiaisonAfter=Yes
+7	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	10	reparandum	_	HasSpokenGender=OnlySingExceptWithLiaison
+8	euh	euh	INTJ	_	_	7	discourse:filler	_	SpaceAfter=No
+9	,	,	PUNCT	_	_	7	punct	_	_
+10	cette	ce	DET	_	Number=Sing|PronType=Dem	11	det	_	Gender[ctxt]=Fem|HasSpokenGender=OnlySingExceptWithLiaison|LiaisonAfter=Yes
 11	histoire	histoire	NOUN	_	_	5	dislocated:obj	_	Gender[lex]=Fem|LiaisonPossibleBefore=Yes|Number[ctxt]=Sing|SpaceAfter=No|highlight=red
 12	.	.	PUNCT	_	_	5	punct	_	_
 </conll>
