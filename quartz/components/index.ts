@@ -26,6 +26,7 @@ import ConditionalRender from "./ConditionalRender"
 
 import PageEdit from "./PageEdit"
 import Request from "./Request"
+import Status from "./Status"
 
 export {
   ArticleTitle,
@@ -56,4 +57,5 @@ export {
 
   PageEdit,
   Request,
+  Status,
 }

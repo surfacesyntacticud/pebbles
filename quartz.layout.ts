@@ -26,6 +26,7 @@ export const defaultContentPageLayout: PageLayout = {
     Component.TagList(),
     Component.PageEdit(),
     Component.Request(),
+    Component.Status(),
   ],
   left: [
     Component.PageTitle(),
@@ -58,7 +59,7 @@ export const defaultListPageLayout: PageLayout = {
     Component.TagList(),
     Component.PageEdit(),
     Component.Request(),
-
+    Component.Status(),
   ],
   left: [
     Component.PageTitle(),
