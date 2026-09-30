@@ -6,6 +6,6 @@ title: Grew Pebbles
 
 Welcome to **Grew Pebbles** main page.
 
-**Note**: This website is under contruction.
+This website is a new version (2026, still under construction) of the SUD guidelines.
 
-A *pebble* is a documentation page associated with a **Grew** request.
+The arichtecture use [Quartz](https://quartz.jzhao.xyz/) and it is organize in pages, each page is called a *pebble*.
