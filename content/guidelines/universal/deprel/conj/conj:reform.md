@@ -9,10 +9,13 @@ tags:
  - deprel
 ---
 
-
 The `conj:reform` relation is specific to spoken language and it is used to link elements in a reformulation.
-The first element is a complete utterance (for uncomplete utterence, the [`reparandum`](guidelines/universal/deprel/reparandum) relation is used).
-The second element is similar (often reusing the same wording and giving more details) and can replaced the first one. 
+Whereas the relation [`conj:coord`](./conj:coord.md) links two different objects, two referents (ex: *Mary and John* are two different referents).
+The relation `conj:reform`, on the other hand, is used to link two denotations of the same referent (ex: *the desert in Kenya, the Kenya desert* is denoting the same referent).
+
+The first element is a complete phrase containing at least one content word. The second element is a reformulation of the first one : it generally makes more precise the meaning of the first element by the choice of a more specific term or by giving more details. We also use `conj:reform` for a request of confirmation, a confirmation, or a rebuttal, when we consider dependencies beyond the speech turn.
+
+Reformulation is distinguished on one side from repairs (encoded in the reverse direction by [`reparandum`](guidelines/universal/deprel/reparandum)), where the first element is incomplete or do not contain content words, and on the other side, from apposition ([`conj:appos`](guidelines/universal/deprel/conj:appos)), when the second element is a new denotation taking another point of view and not a pure reformulation.
 
 <conll>
 # lang = French
@@ -34,10 +37,6 @@ The second element is similar (often reusing the same wording and giving more de
 13	parisienne	parisien	ADJ	_	Gender=Fem	12	mod	_	HasSpokenGender=YesExceptSingWithLiaison|HasSpokenNumber=OnlyWithLiaison|Number[ctxt]=Sing|SpaceAfter=No
 14	.	.	PUNCT	_	_	4	punct	_	_
 </conll>
-
-
-Whereas the relation [`conj:coord`](./conj:coord.md) links two different objects, two referents (ex: *Mary and John* are two different referents).
-The relation `conj:reform`, on the other hand, is used to link two denotations of the same referent (ex: *the desert in Kenya, the Kenya desert* is denoting the same referent).
 
 <conll>
 # lang = French
