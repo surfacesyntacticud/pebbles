@@ -1,5 +1,5 @@
 ---
-title: Subj
+title: Subj • French Sign Language
 request: pattern { X [Subj] }
 scope:
   schema: SUD

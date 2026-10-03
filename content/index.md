@@ -1,11 +1,14 @@
 ---
-title: Grew Pebbles
+title: SUD
 ---
 
-# Grew Pebbles
-
-Welcome to **Grew Pebbles** main page.
+# SUD Documentation
 
 This website is a new version (2026, still under construction) of the SUD guidelines.
 
-The arichtecture use [Quartz](https://quartz.jzhao.xyz/) and it is organize in pages, each page is called a *pebble*.
+The doc contain three parts:
+ - SUD Guidelines
+ - SUD Validation
+ - Help pages
+
+Each page of the documentation is oarganised...

@@ -1,5 +1,5 @@
 ---
-title: Playground
+title: Help
 ---
 
 This area does not contains specific guidelines or validation pebbles.

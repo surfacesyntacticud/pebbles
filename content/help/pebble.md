@@ -6,7 +6,6 @@ scope:
 type: doc
 tags:
  - deprel
-to_revise: true
 status: "DRAFT: to be revised"
 ---
 

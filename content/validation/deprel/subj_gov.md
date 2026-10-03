@@ -3,6 +3,7 @@ title: Subj governor
 request: |
   pattern { X -[subj]-> Y; X[upos <> VERB|AUX] }
   without { X[ExtPos=VERB|AUX] }
+  without { X [form = re".*~"] }
 scope:
   schema: SUD
 level: warning
