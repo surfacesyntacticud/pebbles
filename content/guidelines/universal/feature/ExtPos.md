@@ -14,6 +14,8 @@ ExtPos was first introduced for the POS of idioms: _de plus_, _en fait_, _à cô
 
 Some words can also have an ExtPos: For instance, _face_ in _je suis face à la poste_ has upos=NOUN, ExtPos=ADV; _cf._ is upos=X, ExtPos=VERB.
 
+Unfinished words in spoken production are upos=X but receives an ExtPos: _f~_ is ExtPos=VERB in _je f~_ and ExtPos=NOUN in _le f~_.
+
 Numerals receive an ExtPos features indicating if they are used as cardinals (_two cats_, ExtPos=DET), proper names (_the year 2026_, _room 421_, _page 21_, _53 Regent Street_, ExtPos=PROPN), or pronouns (_les deux autres_, ExtPos=PRON).
 
 Discourse markers are ExtPos=INTJ, such as the nouns _bonjour_, _attention_, _merci_, or _genre_ (_on a perdu genre au moins dix minutes_), the adverb _enfin_, or the verb _écoute_, _allez_, or _voilà_.
