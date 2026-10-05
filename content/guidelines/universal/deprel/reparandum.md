@@ -10,7 +10,7 @@ tags:
 ---
 
 This relation is used to indicate difluencies, such as when a speaker corrects their speech.
-It is similar to the [`reparandum UD relation`](https://universaldependencies.org/u/dep/reparandum.html).
+It is similar to the [`reparandum` UD relation](https://universaldependencies.org/u/dep/reparandum.html).
 
 
 <conll>
