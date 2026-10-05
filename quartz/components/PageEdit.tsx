@@ -2,12 +2,22 @@ import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } fro
 
 const PageEdit: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
 
-  const edit_url = `https://github.com/surfacesyntacticud/pebbles/edit/main/content/${fileData.relativePath}`
+  if (fileData.relativePath) {
+    const edit_url = `https://github.com/surfacesyntacticud/pebbles/edit/main/content/${fileData.relativePath}`
       return (
         <div style="text-align: end;">
           <a class="orange-badge" href={edit_url}>Edit this page</a>
         </div>
       )
+    } else if (fileData.slug) {
+      const folder = fileData.slug.split('/').slice(0,-1).join('/')
+      const folder_url = `https://github.com/surfacesyntacticud/pebbles/edit/main/content/${folder}`
+      return (
+        <div style="text-align: end;">
+          <a class="orange-badge" href={folder_url}>Create a file <code>index.md</code> here</a>
+        </div>
+      )
+    }
 }
 
 PageEdit.css = `
