@@ -16,6 +16,7 @@ The relation is frequently associated to a subrelation indicating the function c
  - [`dislocated:obj`](./dislocated:obj)
  - [`dislocated:obl`](./dislocated:obl)
  - [`dislocated:mod`](./dislocated:mod)
+ - [`dislocated:unk`](./dislocated:unk)
  - [`dislocated`](./dislocated) without subrelation is used when the function is not annotated or unclear. 
 
 > [!hint]
