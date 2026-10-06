@@ -10,7 +10,7 @@ tags:
 
 # Denominative features
 
-Since version 2.18, some features are associated with a layered features `denom`.
+Since version 2.18, some features are associated with a layered features `denom`. A denominative feature is a feature that is traditionally used for the denomination of particular form, but do not correspond to the comparative concept associated with this feature. For instance, so-called past participles in French are used for the passive voice without introducing a past tense (_une personne intéressée par la syntaxe_). Even in the so-called _passé composé_, past participle is the _régime_ imposed by the auxiliary without which we cannot have the value of past tense.
 
 > [!note] Related publication:
 > [Status of morphosyntactic features Illustration with written and spoken French UD treebanks](https://aclanthology.org/2025.tlt-1.18/) (Kahane et al., TLT-SyntaxFest 2025)
