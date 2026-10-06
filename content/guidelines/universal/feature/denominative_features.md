@@ -20,6 +20,6 @@ The following denominative feature is used (in French treebanks only for now):
  - `Tense[denom]` with values `Pres` or `Past`, used on participle (`VerbForm=Part`)
 
 > [!note]
-> TODO: dicsuss about UD conversion
+> UD-native treebanks do not use denominative features. Moreover the fact `Tense` is layered with `denom` moves it from FEATS to MISC. To avoid confusion in UD treebanks, we have decided not to use the extension `denom`in UD-converted treebanks. Thus `Tense[denom]` is converted in `Tense` with a feature `Status[Tense]=Denom`in MISC.
 > 
 > See also discussion [#30](https://github.com/UniversalDependencies/UD_French-GSD/issues/30)
