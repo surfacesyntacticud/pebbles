@@ -12,7 +12,7 @@ tags:
 This relation is used to indicate difluencies, such as when a speaker corrects their speech.
 It is similar to the [`reparandum` UD relation](https://universaldependencies.org/u/dep/reparandum.html), but in SUD, especially for spoken data, it is in in concurrence with [`conj:reform`](https://pebbles.surfacesyntacticud.org/guidelines/universal/deprel/conj/conj:reform). 
 
-`reparandum`is a relation between a reparandum and its repair. Two cases are possible :
+`reparandum` is a relation between a reparandum and its repair. Two cases are possible :
 
 1) the reparandum that do not contain a complete content word (it can contain an unfinished content word): 
 
@@ -60,22 +60,25 @@ It is similar to the [`reparandum` UD relation](https://universaldependencies.or
 18	précautions	précaution	NOUN	_	_	15	comp	_	Gender[lex]=Fem|Number[ctxt]=Plur
 19	qu'	que	PRON	_	PronType=Rel	21	comp:obj	_	SpaceAfter=No
 20	il	lui	PRON	_	Case=Nom|Emph=No|Gender=Masc|Number=Sing|PronType=Prs|Shared=No	21	subj@expl	_	Person[lex]=3
-21	faut	falloir	VERB	_	Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin	28	reparandum	_	Person[ctxt]=3|SpaceAfter=No
+21	faut	falloir	VERB	_	Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin	28	reparandum	_	Person[ctxt]=3|SpaceAfter=No|highlight=red
 22	,	,	PUNCT	_	_	21	punct	_	_
 23	d'	de	ADP	_	_	18	udep	_	SpaceAfter=No
 24	usage	usage	NOUN	_	_	23	comp	_	Gender[lex]=Masc|LiaisonPossibleBefore=Yes|Number[ctxt]=Sing|SpaceAfter=No
 25	,	,	PUNCT	_	_	23	punct	_	_
 26	qu'	que	PRON	_	PronType=Rel	29	comp:obj	_	SpaceAfter=No
 27	il	lui	PRON	_	Case=Nom|Emph=No|Gender=Masc|Number=Sing|PronType=Prs	28	subj@expl	_	Person[lex]=3
-28	faut	falloir	VERB	_	Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin	18	mod@relcl	_	Person[ctxt]=3
+28	faut	falloir	VERB	_	Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin	18	mod@relcl	_	Person[ctxt]=3|highlight=red
 29	mettre	mettre	VERB	_	VerbForm=Inf	28	comp:obj	_	Subject=NoRaising
-30	…	…	PUNCT	_	_	6	punct	_	_
+30	,	,	PUNCT	_	_	6	punct	_	_
+31	c'	ce	PRON	_	PronType=Dem	32	subj	_	Gender[lex]=Masc|Number[lex]=Sing|Person[lex]=3|SpaceAfter=No
+32	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+33	…	…	PUNCT	_	_	32	punct	_	_
 </conll>
 
 Note that the reparandum has been attached to its repair in the previous example, even if the result is non projective.
 
-> [!note] Innstead of `reparandum`which goes from right to left, it would have been possible to use a relation, that would have been names `repair`, going from left to right, as `conj:reform`.
-> But this may result in some problems, especially when the reparandum is incomplete or headed by a interrupted word.
+> [!note] Instead of `reparandum` which goes from right to left, it would have been possible to use a relation, that would have been named `repair`, going from left to right, as `conj:reform`.
+> But this may result in some problems, especially when the `reparandum` is incomplete or headed by a interrupted word.
 
 > [!tips]
 > For more examples on disfluencies, you can refer to the [disfluency](guidelines/universal/construction/disfluency) page.
