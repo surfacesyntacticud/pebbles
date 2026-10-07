@@ -77,6 +77,44 @@ It is similar to the [`reparandum` UD relation](https://universaldependencies.or
 
 Note that the reparandum has been attached to its repair in the previous example, even if the result is non projective.
 
+The reparandum must be a unit. In the following example, _d'autres_ is repeated. It is then a reparandum. As the unit is incomplete, the head noun is missing, the ajective _autres_ is promoted  (`Promotion=mod`) and the determiner _d'_ is attached to the position occupied by _autres_ (`Head=Position`)
+
+<conll>
+# lang = French
+# sent_id = ParisStories_2019_experienceFac_67
+# text = et là en fait en arrivant à la fac bah j'ai découvert un peu d'autres d'autres mondes, des gens qui venaient de partout ailleurs.
+# text_en = and then, actually, when I got to college, I discovered a new a new world, people who came from all over.
+1	et	et	CCONJ	_	_	12	cc	_	_
+2	là	là	ADV	_	_	12	mod	_	_
+3	en	en	ADP	_	ExtPos=ADV	12	discourse	_	Idiom=Yes
+4	fait	fait	NOUN	_	_	3	comp	_	Gender[lex]=Masc|InIdiom=Yes|Number[ctxt]=Sing
+5	en	en	ADP	_	_	12	mod	_	_
+6	arrivant	arriver	VERB	_	VerbForm=Part	5	comp	_	PastPartHasSpokenGender=NotInThisDialect|Tense[denom]=Pres
+7	à	à	ADP	_	_	6	mod	_	_
+8	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	HasSpokenGender=OnlySingExceptWithLiaison
+9	fac	fac	NOUN	_	_	7	comp	_	Gender[lex]=Fem|Number[ctxt]=Sing
+10	bah	bah	INTJ	_	_	5	discourse	_	_
+11	j'	moi	PRON	_	Case=Nom|Emph=No|PronType=Prs	12	subj	_	Number[lex]=Sing|Person[lex]=1|SpaceAfter=No
+12	ai	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
+13	découvert	découvrir	VERB	_	Gender=Masc|VerbForm=Part|Voice=Act	12	comp:aux@tense	_	Number[ctxt]=Sing|PastPartHasSpokenGender=Yes|Tense[denom]=Past
+14	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	15	det	_	InIdiom=Yes
+15	peu	peu	NOUN	_	ExtPos=ADV	13	mod	_	Gender[lex]=Masc|Idiom=Yes|Number[ctxt]=Sing
+16	d'	un	DET	_	Definite=Ind|Number=Plur|PronType=Art|Shared=No	17	det	_	Head=Position|LiaisonAfter=Yes|SpaceAfter=No
+17	autres	autre	ADJ	_	_	20	reparandum	_	Gender[ctxt]=Masc|HasSpokenGender=No|HasSpokenNumber=OnlyWithLiaison|LiaisonPossibleBefore=Yes|Number[ctxt]=Plur|Promotion=mod|Scrap=Yes
+18	d'	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	20	det	_	LiaisonAfter=Yes|SpaceAfter=No
+19	autres	autre	ADJ	_	_	20	mod	_	Gender[ctxt]=Masc|HasSpokenGender=No|HasSpokenNumber=OnlyWithLiaison|LiaisonPossibleBefore=Yes|Number[ctxt]=Plur
+20	mondes	monde	NOUN	_	_	13	comp:obj	_	Gender[lex]=Masc|Number[ctxt]=Plur|SpaceAfter=No
+21	,	,	PUNCT	_	_	23	punct	_	_
+22	des	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	23	det	_	_
+23	gens	gens	NOUN	_	_	20	conj:appos	_	Gender[lex]=Masc|Number[ctxt]=Plur
+24	qui	qui	PRON	_	PronType=Rel	25	subj	_	_
+25	venaient	venir	VERB	_	Mood=Ind|Person=3|Shared=No|Tense=Imp|VerbForm=Fin	23	mod@relcl	_	Number[ctxt]=Plur
+26	de	de	ADP	_	_	25	comp:obl	_	_
+27	partout	partout	ADV	_	_	28	mod	_	_
+28	ailleurs	ailleurs	ADV	_	_	26	comp	_	SpaceAfter=No
+29	.	.	PUNCT	_	_	12	punct	_	_
+</conll>
+
 > [!note] Instead of `reparandum` which goes from right to left, it would have been possible to use a relation, that would have been named `repair`, going from left to right, as `conj:reform`.
 > But this may result in some problems, especially when the `reparandum` is incomplete or headed by a interrupted word.
 
