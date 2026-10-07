@@ -9,8 +9,9 @@ tags:
  - deprel
 ---
 
-The `conj:coord` relation is used to link elements connected with a coordinating conjunction such as *and* and *or*.
-The conjunction itself is linked to the second element with a [`cc`](https://universaldependencies.org/u/dep/cc.html) relation.
+The `conj:coord` relation is used to link two phrases occupying the same position and having different referents. (Conjuncts with the same referent are [`conj:appos`](https://pebbles.surfacesyntacticud.org/guidelines/universal/deprel/conj/conj:appos) or [`conj:reform`](https://pebbles.surfacesyntacticud.org/guidelines/universal/deprel/conj/conj:reform).)
+Coordinated conjuncts are generally connected with a coordinating conjunction such as *and* and *or*, but they can be only juxtaposed. The conjunction itself is linked to the second element with a [`cc`](https://universaldependencies.org/u/dep/cc.html) relation.
+
 It is analogous to [`conj`](https://universaldependencies.org/u/dep/conj.html) relation in UD.
 
 <conll>
