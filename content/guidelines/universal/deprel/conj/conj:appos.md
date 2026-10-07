@@ -9,7 +9,9 @@ tags:
  - deprel
 ---
 
-This relation `conj:appos` is used for appositions. In an apposition, conjuncts have the same referent, but two clearly different denotations. The conjunct in apposition forms a predication in the background (in *Mary, my best friend*, the second conjunct *my best friend* is a predication on the first conjunct *Mary*, it is equivalent to *Mary is my best friend*).
+This relation `conj:appos` is used for appositions. In an apposition, conjuncts have the same referent, but two clearly different denotations, with two different points of view. `conj:appos` must be distinguished from [`conj:reform`](https://pebbles.surfacesyntacticud.org/guidelines/universal/deprel/conj/conj:appos), where the second conjunct is just a reformulation of the first conjunct, elaborating on the first denotation.
+
+The secind conjunct in apposition forms a predication in the background: in *Mary, my best friend*, the second conjunct *my best friend* is a predication on the first conjunct *Mary*, it is equivalent to *Mary is my best friend*.
 
 > [!note]
 > `conj:appos` is only used when the two conjuncts form two separate phrases. When the apposition is a modification, the relation `mod:appos` must be used, like *my friend Mary* or *le boulevard Saint-Michel*.
