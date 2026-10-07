@@ -38,7 +38,7 @@ It is similar to the [`reparandum` UD relation](https://universaldependencies.or
 <conll>
 # sent_id = Rhap_D2008-126
 # text = donc, euh, le scénario auquel on peut s'attendre encore une fois avec toutes les précautions qu'il faut, d'usage, qu'il faut mettre, c'est que cette souche que l'on voit en Amérique du Nord ne va pas se plaire beaucoup avec l'été, euh, chez nous, dans l'hémisphère nord.
-# text_en = So, um, the scenario we can expect once again taking all the precautions **that need**, required, that need to be taken, it's that this strain we're seeing in North America won't fare very well during the summer, um, here in the Northern Hemisphere.
+# text_en = So, um, the scenario we can expect once again taking all the precautions that need, required, that need to be taken, it's that this strain we're seeing in North America won't fare very well during the summer, um, here in the Northern Hemisphere.
 1	donc	donc	ADV	_	_	32	mod	_	SpaceAfter=No|WordAlignmentBegin=358892|WordAlignmentEnd=359227
 2	,	,	PUNCT	_	_	1	punct	_	WordAlignmentBegin=359227|WordAlignmentEnd=359227
 3	euh	euh	INTJ	_	_	32	discourse:filler	_	SpaceAfter=No|WordAlignmentBegin=359227|WordAlignmentEnd=359446
